@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YHTSDKDemoConfirmViewController">
+            <connections>
+                <outlet property="confirmBtn" destination="8Nu-N9-30v" id="SQ0-a1-fXm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合同标题：《投资合同》" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1dE-c4-fdW">
+                    <rect key="frame" x="44" y="265" width="548" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="fZM-Bs-dzH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="交易金额：20000元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRE-iV-06w">
+                    <rect key="frame" x="44" y="307" width="548" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="y7g-Rg-2V9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款时间：2016-12-31" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dal-I2-xCD">
+                    <rect key="frame" x="44" y="349" width="548" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="uFR-mT-tKg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="利率：4.75%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blD-A5-hcf">
+                    <rect key="frame" x="44" y="391" width="548" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="0za-Dt-ej9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nu-N9-30v">
+                    <rect key="frame" x="178" y="466" width="245" height="44"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="245" id="3GR-nr-kxE"/>
+                        <constraint firstAttribute="height" constant="44" id="QHW-jD-yID"/>
+                    </constraints>
+                    <state key="normal" title="立即签署合同">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmBtn_Action:" destination="-1" eventType="touchUpInside" id="S3f-sl-NRg"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pay_success" translatesAutoresizingMaskIntoConstraints="NO" id="vWv-r8-haP">
+                    <rect key="frame" x="175" y="100" width="250" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="KVd-fQ-4J4"/>
+                        <constraint firstAttribute="width" constant="250" id="Lyr-EA-UeD"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="blD-A5-hcf" firstAttribute="top" secondItem="dal-I2-xCD" secondAttribute="bottom" constant="8" id="1vl-bf-9A2"/>
+                <constraint firstItem="vWv-r8-haP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="6J9-5p-yhM"/>
+                <constraint firstItem="IRE-iV-06w" firstAttribute="top" secondItem="1dE-c4-fdW" secondAttribute="bottom" constant="8" id="6oH-IN-ue9"/>
+                <constraint firstItem="dal-I2-xCD" firstAttribute="top" secondItem="IRE-iV-06w" secondAttribute="bottom" constant="8" id="DNs-bM-Cj1"/>
+                <constraint firstItem="blD-A5-hcf" firstAttribute="top" secondItem="dal-I2-xCD" secondAttribute="bottom" constant="8" id="Dqw-AX-wyl"/>
+                <constraint firstItem="dal-I2-xCD" firstAttribute="top" secondItem="IRE-iV-06w" secondAttribute="bottom" constant="8" id="E2g-Gk-SJj"/>
+                <constraint firstItem="IRE-iV-06w" firstAttribute="trailing" secondItem="1dE-c4-fdW" secondAttribute="trailing" id="E7L-KI-dcr"/>
+                <constraint firstItem="dal-I2-xCD" firstAttribute="trailing" secondItem="1dE-c4-fdW" secondAttribute="trailing" id="GkW-1M-etU"/>
+                <constraint firstItem="IRE-iV-06w" firstAttribute="top" secondItem="1dE-c4-fdW" secondAttribute="bottom" constant="8" id="NLO-R0-kVo"/>
+                <constraint firstItem="1dE-c4-fdW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="44" id="VRK-1c-J2k"/>
+                <constraint firstItem="IRE-iV-06w" firstAttribute="leading" secondItem="1dE-c4-fdW" secondAttribute="leading" id="XFs-we-RtX"/>
+                <constraint firstItem="blD-A5-hcf" firstAttribute="trailing" secondItem="1dE-c4-fdW" secondAttribute="trailing" id="aoi-3b-4SM"/>
+                <constraint firstAttribute="bottom" secondItem="8Nu-N9-30v" secondAttribute="bottom" constant="90" id="eEG-xd-3n4"/>
+                <constraint firstItem="8Nu-N9-30v" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hty-OW-8WC"/>
+                <constraint firstItem="1dE-c4-fdW" firstAttribute="top" secondItem="vWv-r8-haP" secondAttribute="bottom" constant="100" id="kjp-OA-vUh"/>
+                <constraint firstItem="blD-A5-hcf" firstAttribute="leading" secondItem="1dE-c4-fdW" secondAttribute="leading" id="koD-wH-Egf"/>
+                <constraint firstItem="vWv-r8-haP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m6W-Jd-zhd"/>
+                <constraint firstItem="dal-I2-xCD" firstAttribute="leading" secondItem="1dE-c4-fdW" secondAttribute="leading" id="q7y-UX-jM3"/>
+                <constraint firstAttribute="trailing" secondItem="1dE-c4-fdW" secondAttribute="trailing" constant="8" id="tdS-wJ-Woj"/>
+            </constraints>
+            <point key="canvasLocation" x="189" y="286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="pay_success" width="126" height="33"/>
+    </resources>
+</document>
