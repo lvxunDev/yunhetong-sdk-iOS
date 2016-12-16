@@ -28,6 +28,18 @@
                           delegate:(id<YHTHttpRequestDelegate>)delegate;
 
 /**
+ *  一键签署合同
+ *
+ *  @param contractID  需要签署合同的编号
+ *  @param tag         用户自定义'tag'，用于区分回调'request'
+ *  @param delegate    YHTHttpRequestDelegate对象，用于接收云合同SDK对于发起的接口请求的请求响应
+ */
+- (void)allSignContractWithContractID:(NSNumber *)contractID
+                                  tag:(NSString *)tag
+                             delegate:(id<YHTHttpRequestDelegate>)delegate;
+
+
+/**
  *  作废合同
  *
  *  @param contractID  需要作废合同的编号
@@ -52,6 +64,18 @@
 
 - (void)viewContactWithContractID:(NSNumber *)contractID
                               tag:(NSString *)tag
-                       backParams:(nullable NSString *)params
+                       backParams:( NSString *)params
                          delegate:(id<YHTHttpRequestDelegate>)delegate;
+
+/**
+ *  预览合同
+ *
+ *  @param contractID  需要查看合同的编号
+ *  @param tag         用户自定义'tag'，用于区分回调'request'
+ *  @param delegate    YHTHttpRequestDelegate对象，用于接收云合同SDK对于发起的接口请求的请求响应
+ */
+- (void)preViewContactWithContractID:(NSNumber *)contractID
+                                 tag:(NSString *)tag
+                          backParams:(NSString *)params
+                            delegate:(id<YHTHttpRequestDelegate>)delegate;
 @end

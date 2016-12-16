@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-//#define TEST_SERVICE                    1
+
+#define TEST_SERVICE                    1
+
 @interface YHTConstants : NSObject
 
 #define _kIOS_SCREEN_HEIGHT                           ([UIScreen mainScreen].bounds.size.height)
@@ -28,6 +30,11 @@
 extern NSString * const kSignContract_URL;
 
 /**
+ *  一键签署合同'url'
+ */
+extern NSString * const kAllSignContract_URL;
+
+/**
  *  作废合同'url'
  */
 extern NSString * const kInvalidContract_URL;
@@ -36,6 +43,11 @@ extern NSString * const kInvalidContract_URL;
  *  查看合同'url'
  */
 extern NSString * const kViewContract_URL;
+
+/**
+ *  预览查看合同'url'
+ */
+extern NSString * const kPreViewContract_URL;
 
 #pragma mark - Configuring the SignManager URL
 
@@ -58,6 +70,12 @@ extern NSString * const kDeleteSignature_URL;
  *  查看网页合同'url'
  */
 extern NSString * const kViewWebContract_URL;
+
+/**
+ *  预览网页合同'url'
+ */
+extern NSString * const kPreViewWebContract_URL;
+
 
 /**
  *  'token'

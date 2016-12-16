@@ -12,6 +12,8 @@ typedef NS_ENUM(NSInteger, ContractOperateType){
     ContractOperateType_Other            = -99999,
     ContractOperateType_Sign             = 0,
     ContractOperateType_Invalid          = 1,
+    ContractOperateType_AllSign          = 2,
+    ContractOperateType_Cancel           = 3,
 };
 
 @interface YHTContractPartner : NSObject
@@ -29,5 +31,5 @@ typedef NS_ENUM(NSInteger, ContractOperateType){
 + (instancetype)instanceWithDict:(NSDictionary *)dict;
 
 - (NSDictionary *)titlesAndOperateTypes;
-
+- (NSDictionary *)titlesAndPreOperateTypes;
 @end

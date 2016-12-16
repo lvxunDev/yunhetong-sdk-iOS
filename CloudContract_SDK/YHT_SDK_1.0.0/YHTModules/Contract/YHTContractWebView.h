@@ -15,7 +15,7 @@
 @property (nonatomic, weak)id<ContractWebViewDelegate> contractDelegate;
 
 - (void)refresh;
-
+- (void)preRefresh;
 + (instancetype)instanceWithContractID:(NSNumber *)contractID delegate:(id<ContractWebViewDelegate>)delegate;
 @end
 

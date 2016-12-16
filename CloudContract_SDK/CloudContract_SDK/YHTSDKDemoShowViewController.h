@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "YHTSDKDemoBaseViewController.h"
 @interface YHTSDKDemoShowViewController : YHTSDKDemoBaseViewController
+//预览合同
+@property (weak, nonatomic) IBOutlet UIButton *button_preView;
 
 //发起方签署按钮
 @property (weak, nonatomic) IBOutlet UIButton *button_partyA;

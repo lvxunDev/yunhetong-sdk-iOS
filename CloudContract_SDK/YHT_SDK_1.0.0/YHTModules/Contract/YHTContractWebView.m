@@ -43,6 +43,19 @@
     [self loadRequest:__request];
 }
 
+- (void)preRefresh{
+    NSMutableString *__urlStr = [NSMutableString stringWithString:[YHTConstants urlByHost:kPreViewWebContract_URL]];
+    [__urlStr appendFormat:@"?contractId=%lld", [self.contractID longValue]];
+    [__urlStr appendFormat:@"&token=%@", [YHTTokenManager sharedManager].token];
+
+    self.contractURL = [NSURL URLWithString:__urlStr];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    NSURLRequest *__request = [NSURLRequest requestWithURL:self.contractURL
+                                               cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                           timeoutInterval: 20.0];
+    [self loadRequest:__request];
+}
+
 #pragma mark - UIWebViewDelegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     if (self.contractDelegate) {

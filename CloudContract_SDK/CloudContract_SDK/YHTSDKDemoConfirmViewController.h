@@ -10,5 +10,10 @@
 #import "YHTSDKDemoBaseViewController.h"
 @interface YHTSDKDemoConfirmViewController : YHTSDKDemoBaseViewController
 
+@property (nonatomic, assign)BOOL isPreView;//判断查看合同/预览合同
+
 @property (weak, nonatomic) IBOutlet UIButton *confirmBtn;
+
++ (instancetype)instanceWithIsPreView:(BOOL)__isPreView;
+
 @end

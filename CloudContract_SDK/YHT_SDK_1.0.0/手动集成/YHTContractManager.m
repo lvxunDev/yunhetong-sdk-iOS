@@ -30,6 +30,16 @@
                           delegate:delegate];
 }
 
+- (void)allSignContractWithContractID:(NSNumber *)contractID
+                                  tag:(NSString *)tag
+                             delegate:(id<YHTHttpRequestDelegate>)delegate{
+    [YHTHttpRequest requestWithURL:[YHTConstants urlByHost:kAllSignContract_URL]
+                        httpMethod:@"POST"
+                            params:@{@"contractId" : contractID}
+                               tag:tag
+                          delegate:delegate];
+}
+
 - (void)invalidContractWithContractID:(NSNumber *)contractID
                                   tag:(NSString *)tag
                              delegate:(id<YHTHttpRequestDelegate>)delegate{
@@ -48,11 +58,28 @@
 
 - (void)viewContactWithContractID:(NSNumber *)contractID
                               tag:(NSString *)tag
-                       backParams:(nullable NSString *)params
+                       backParams:(NSString *)params
                          delegate:(id<YHTHttpRequestDelegate>)delegate{
+
+    NSDictionary *parameter = @{@"contractId" : contractID, @"backParams" : params? params:@""};
+
     [YHTHttpRequest requestWithURL:[YHTConstants urlByHost:kViewContract_URL]
                         httpMethod:@"POST"
-                            params:@{@"contractId" : contractID, @"backParams" : params}
+                            params:parameter
+                               tag:tag
+                          delegate:delegate];
+}
+
+- (void)preViewContactWithContractID:(NSNumber *)contractID
+                              tag:(NSString *)tag
+                       backParams:(NSString *)params
+                         delegate:(id<YHTHttpRequestDelegate>)delegate{
+
+    NSDictionary *parameter = @{@"contractId" : contractID};
+
+    [YHTHttpRequest requestWithURL:[YHTConstants urlByHost:kPreViewContract_URL]
+                        httpMethod:@"POST"
+                            params:parameter
                                tag:tag
                           delegate:delegate];
 }

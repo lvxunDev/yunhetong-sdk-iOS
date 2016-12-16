@@ -12,9 +12,13 @@
 
 NSString * const kSignContract_URL         = @"sdk/contract/sign";
 
+NSString * const kAllSignContract_URL      = @"sdk/contract/allSign";
+
 NSString * const kInvalidContract_URL      = @"sdk/contract/invalid";
 
 NSString * const kViewContract_URL         = @"sdk/contract/view";
+
+NSString * const kPreViewContract_URL      = @"sdk/contract/preview";
 
 NSString * const kViewSignature_URL        = @"sdk/sign/getSign";
 
@@ -24,18 +28,20 @@ NSString * const kDeleteSignature_URL      = @"sdk/sign/delSign";
 
 NSString * const kViewWebContract_URL      = @"sdk/contract/mobile/view";
 
+NSString * const kPreViewWebContract_URL   = @"sdk/contract/mobile/preview";
+
+
 #pragma mark - Java
 
-/*
- *  NSString * const kToken_URL                = @"sdkdemo/token";
- *
- *  NSString * const kTokenContract_URL        = @"sdkdemo/token_contract";
- */
+  NSString * const kToken_URL                = @"sdkdemo/token";
+
+  NSString * const kTokenContract_URL        = @"sdkdemo/token_contract";
+
 
 #pragma mark - PHP
-NSString * const kToken_URL                = @"phpDemo/token.php";
-
-NSString * const kTokenContract_URL        = @"phpDemo/token_contract.php";
+//NSString * const kToken_URL                = @"phpDemo/token.php";
+//
+//NSString * const kTokenContract_URL        = @"phpDemo/token_contract.php";
 
 + (NSString *)host {
 

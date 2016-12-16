@@ -42,6 +42,8 @@
 		CFA7DA281CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DA271CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m */; };
 		CFA7DA2B1CE9E49700D6EDD3 /* YHTSDKDemoContract.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DA2A1CE9E49700D6EDD3 /* YHTSDKDemoContract.m */; };
 		CFB9F2581D0304AD00262E49 /* YHTSDKDemoTokenListener.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9F2571D0304AD00262E49 /* YHTSDKDemoTokenListener.m */; };
+		CFD4077F1DFFE147004C1609 /* YHTPreContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */; };
+		CFD407821DFFF500004C1609 /* YHTContractPreOperateMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */; };
 		CFDEBA581D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4B1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m */; };
 		CFDEBA591D0FDFAD00B57D2C /* YHT_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4D1D0FDFAD00B57D2C /* YHT_MBProgressHUD.m */; };
 		CFDEBA5A1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4F1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m */; };
@@ -153,6 +155,10 @@
 		CFA7DA2A1CE9E49700D6EDD3 /* YHTSDKDemoContract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoContract.m; sourceTree = "<group>"; };
 		CFB9F2561D0304AD00262E49 /* YHTSDKDemoTokenListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSDKDemoTokenListener.h; sourceTree = "<group>"; };
 		CFB9F2571D0304AD00262E49 /* YHTSDKDemoTokenListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoTokenListener.m; sourceTree = "<group>"; };
+		CFD4077D1DFFE147004C1609 /* YHTPreContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTPreContractContentViewController.h; sourceTree = "<group>"; };
+		CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTPreContractContentViewController.m; sourceTree = "<group>"; };
+		CFD407801DFFF500004C1609 /* YHTContractPreOperateMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractPreOperateMenu.h; sourceTree = "<group>"; };
+		CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractPreOperateMenu.m; sourceTree = "<group>"; };
 		CFDEBA4A1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YHT_MBProgressHUD+Wqz.h"; sourceTree = "<group>"; };
 		CFDEBA4B1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YHT_MBProgressHUD+Wqz.m"; sourceTree = "<group>"; };
 		CFDEBA4C1D0FDFAD00B57D2C /* YHT_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_MBProgressHUD.h; sourceTree = "<group>"; };
@@ -375,6 +381,8 @@
 			children = (
 				CFDEBA981D1186FC00B57D2C /* YHTContractContentViewController.h */,
 				CFDEBA991D1186FC00B57D2C /* YHTContractContentViewController.m */,
+				CFD4077D1DFFE147004C1609 /* YHTPreContractContentViewController.h */,
+				CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */,
 				CFDEBA9A1D1186FC00B57D2C /* YHTSignMadeViewController.h */,
 				CFDEBA9B1D1186FC00B57D2C /* YHTSignMadeViewController.m */,
 				CFDEBA9C1D1186FC00B57D2C /* YHTSignViewController.h */,
@@ -461,6 +469,8 @@
 				CFDEBA791D1185FE00B57D2C /* YHTContract.m */,
 				CFDEBA7A1D1185FE00B57D2C /* YHTContractOperateMenu.h */,
 				CFDEBA7B1D1185FE00B57D2C /* YHTContractOperateMenu.m */,
+				CFD407801DFFF500004C1609 /* YHTContractPreOperateMenu.h */,
+				CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */,
 				CFDEBA7C1D1185FE00B57D2C /* YHTContractPartner.h */,
 				CFDEBA7D1D1185FE00B57D2C /* YHTContractPartner.m */,
 				CFDEBA7E1D1185FE00B57D2C /* YHTContractWebView.h */,
@@ -666,6 +676,7 @@
 				CFDEBA751D11848A00B57D2C /* YHTError.m in Sources */,
 				CF309BBF1CEC4A0C00637FF6 /* NSNumber+Wqz.m in Sources */,
 				CFDEBA5B1D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m in Sources */,
+				CFD407821DFFF500004C1609 /* YHTContractPreOperateMenu.m in Sources */,
 				CFDEBAA01D1186FC00B57D2C /* YHTSignViewController.m in Sources */,
 				CFDEBA951D1186D900B57D2C /* YHTContractManager.m in Sources */,
 				CFDEBA5D1D0FDFAD00B57D2C /* YHT_PPSSignatureView.m in Sources */,
@@ -674,6 +685,7 @@
 				CFDEBA591D0FDFAD00B57D2C /* YHT_MBProgressHUD.m in Sources */,
 				CFDEBA971D1186D900B57D2C /* YHTTokenManager.m in Sources */,
 				CFDEBA851D1185FE00B57D2C /* YHTContract.m in Sources */,
+				CFD4077F1DFFE147004C1609 /* YHTPreContractContentViewController.m in Sources */,
 				CFDEBA961D1186D900B57D2C /* YHTSignManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

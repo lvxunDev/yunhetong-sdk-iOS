@@ -14,6 +14,7 @@
 #import "YHTSignMadeViewController.h"
 #import "YHTSignViewController.h"
 #import "YHTContractContentViewController.h"
+#import "YHTPreContractContentViewController.h"
 
 typedef NS_ENUM(NSInteger, YHTSDKResponseStatusCode)
 {
