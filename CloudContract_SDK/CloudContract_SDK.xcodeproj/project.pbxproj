@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05FE03CCBADD3226B5DB76DD /* libPods-CloudContract_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F468922D5309885756F55EBA /* libPods-CloudContract_SDK.a */; };
 		CF1BEF251CE7182800A55417 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF131CE7182800A55417 /* AFHTTPRequestOperation.m */; };
 		CF1BEF261CE7182800A55417 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF151CE7182800A55417 /* AFHTTPRequestOperationManager.m */; };
 		CF1BEF271CE7182800A55417 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF171CE7182800A55417 /* AFHTTPSessionManager.m */; };
@@ -16,25 +17,12 @@
 		CF1BEF2B1CE7182800A55417 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF201CE7182800A55417 /* AFURLRequestSerialization.m */; };
 		CF1BEF2C1CE7182800A55417 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF221CE7182800A55417 /* AFURLResponseSerialization.m */; };
 		CF1BEF2D1CE7182800A55417 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF241CE7182800A55417 /* AFURLSessionManager.m */; };
-		CF309BBE1CEC4A0C00637FF6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB51CEC4A0C00637FF6 /* NSData+Base64.m */; };
-		CF309BBF1CEC4A0C00637FF6 /* NSNumber+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB71CEC4A0C00637FF6 /* NSNumber+Wqz.m */; };
-		CF309BC01CEC4A0C00637FF6 /* NSString+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB91CEC4A0C00637FF6 /* NSString+Wqz.m */; };
-		CF309BC11CEC4A0C00637FF6 /* UIButton+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBB1CEC4A0C00637FF6 /* UIButton+Wqz.m */; };
-		CF309BC21CEC4A0C00637FF6 /* UIImage+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBD1CEC4A0C00637FF6 /* UIImage+Wqz.m */; };
-		CF309BCA1CEC4B5600637FF6 /* BasePopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC51CEC4B5600637FF6 /* BasePopMenu.m */; };
-		CF309BCB1CEC4B5600637FF6 /* BasePopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC71CEC4B5600637FF6 /* BasePopTableView.m */; };
-		CF309BCC1CEC4B5600637FF6 /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC91CEC4B5600637FF6 /* BaseWebView.m */; };
-		CF309BD41CEC5CD300637FF6 /* libYHT_SDK_1.0.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF67F6731CC8B1F100BBB7AF /* libYHT_SDK_1.0.0.a */; };
 		CF309BD51CEC5CD900637FF6 /* YHTSdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF309BD01CEC57A900637FF6 /* YHTSdk.bundle */; };
-		CF309BD81CEC61F900637FF6 /* YHTSdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF309BD01CEC57A900637FF6 /* YHTSdk.bundle */; };
-		CF309BD91CEC625600637FF6 /* YHTSdk.h in Copy Files */ = {isa = PBXBuildFile; fileRef = CF67F6D01CCDEAB400BBB7AF /* YHTSdk.h */; };
-		CF309C121CEC809800637FF6 /* YHTSdk.bundle in Copy Files */ = {isa = PBXBuildFile; fileRef = CF309BD01CEC57A900637FF6 /* YHTSdk.bundle */; };
 		CF67F63D1CC8B04F00BBB7AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F63C1CC8B04F00BBB7AF /* main.m */; };
 		CF67F6401CC8B04F00BBB7AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F63F1CC8B04F00BBB7AF /* AppDelegate.m */; };
 		CF67F6481CC8B04F00BBB7AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF67F6471CC8B04F00BBB7AF /* Assets.xcassets */; };
 		CF67F64B1CC8B04F00BBB7AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF67F6491CC8B04F00BBB7AF /* LaunchScreen.storyboard */; };
 		CF67F6561CC8B04F00BBB7AF /* CloudContract_SDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F6551CC8B04F00BBB7AF /* CloudContract_SDKTests.m */; };
-		CF67F6D31CCDEAB400BBB7AF /* YHTSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F6D11CCDEAB400BBB7AF /* YHTSdk.m */; };
 		CF772EF61D06A504006005DF /* YHTSDKDemoConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF772EF41D06A504006005DF /* YHTSDKDemoConfirmViewController.m */; };
 		CF772EF71D06A504006005DF /* YHTSDKDemoConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF772EF51D06A504006005DF /* YHTSDKDemoConfirmViewController.xib */; };
 		CFA5B1FF1D057B1600239C6A /* YHTSDKDemoShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA5B1FD1D057B1600239C6A /* YHTSDKDemoShowViewController.m */; };
@@ -42,29 +30,36 @@
 		CFA7DA281CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DA271CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m */; };
 		CFA7DA2B1CE9E49700D6EDD3 /* YHTSDKDemoContract.m in Sources */ = {isa = PBXBuildFile; fileRef = CFA7DA2A1CE9E49700D6EDD3 /* YHTSDKDemoContract.m */; };
 		CFB9F2581D0304AD00262E49 /* YHTSDKDemoTokenListener.m in Sources */ = {isa = PBXBuildFile; fileRef = CFB9F2571D0304AD00262E49 /* YHTSDKDemoTokenListener.m */; };
-		CFD4077F1DFFE147004C1609 /* YHTPreContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */; };
-		CFD407821DFFF500004C1609 /* YHTContractPreOperateMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */; };
-		CFDEBA581D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4B1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m */; };
-		CFDEBA591D0FDFAD00B57D2C /* YHT_MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4D1D0FDFAD00B57D2C /* YHT_MBProgressHUD.m */; };
-		CFDEBA5A1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA4F1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m */; };
-		CFDEBA5B1D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */; };
-		CFDEBA5C1D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA541D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m */; };
-		CFDEBA5D1D0FDFAD00B57D2C /* YHT_PPSSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA571D0FDFAD00B57D2C /* YHT_PPSSignatureView.m */; };
-		CFDEBA741D11848A00B57D2C /* YHTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA6F1D11848A00B57D2C /* YHTConstants.m */; };
-		CFDEBA751D11848A00B57D2C /* YHTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA711D11848A00B57D2C /* YHTError.m */; };
-		CFDEBA761D11848A00B57D2C /* YHTHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA731D11848A00B57D2C /* YHTHttpRequest.m */; };
-		CFDEBA851D1185FE00B57D2C /* YHTContract.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA791D1185FE00B57D2C /* YHTContract.m */; };
-		CFDEBA861D1185FE00B57D2C /* YHTContractOperateMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7B1D1185FE00B57D2C /* YHTContractOperateMenu.m */; };
-		CFDEBA871D1185FE00B57D2C /* YHTContractPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7D1D1185FE00B57D2C /* YHTContractPartner.m */; };
-		CFDEBA881D1185FE00B57D2C /* YHTContractWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7F1D1185FE00B57D2C /* YHTContractWebView.m */; };
-		CFDEBA891D1185FE00B57D2C /* YHTSign.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA821D1185FE00B57D2C /* YHTSign.m */; };
-		CFDEBA8A1D1185FE00B57D2C /* YHTSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA841D1185FE00B57D2C /* YHTSignView.m */; };
-		CFDEBA951D1186D900B57D2C /* YHTContractManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA901D1186D900B57D2C /* YHTContractManager.m */; };
-		CFDEBA961D1186D900B57D2C /* YHTSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA921D1186D900B57D2C /* YHTSignManager.m */; };
-		CFDEBA971D1186D900B57D2C /* YHTTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA941D1186D900B57D2C /* YHTTokenManager.m */; };
-		CFDEBA9E1D1186FC00B57D2C /* YHTContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA991D1186FC00B57D2C /* YHTContractContentViewController.m */; };
-		CFDEBA9F1D1186FC00B57D2C /* YHTSignMadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA9B1D1186FC00B57D2C /* YHTSignMadeViewController.m */; };
-		CFDEBAA01D1186FC00B57D2C /* YHTSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA9D1D1186FC00B57D2C /* YHTSignViewController.m */; };
+		CFCF4D3D1E0513E5007BD328 /* YHTSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F6D11CCDEAB400BBB7AF /* YHTSdk.m */; };
+		CFCF4D3E1E0513E5007BD328 /* YHTContractManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA901D1186D900B57D2C /* YHTContractManager.m */; };
+		CFCF4D3F1E0513E5007BD328 /* YHTSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA921D1186D900B57D2C /* YHTSignManager.m */; };
+		CFCF4D401E0513E5007BD328 /* YHTTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA941D1186D900B57D2C /* YHTTokenManager.m */; };
+		CFCF4D411E0513E5007BD328 /* YHTContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA991D1186FC00B57D2C /* YHTContractContentViewController.m */; };
+		CFCF4D421E0513E5007BD328 /* YHTPreContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */; };
+		CFCF4D431E0513E5007BD328 /* YHTSignMadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA9B1D1186FC00B57D2C /* YHTSignMadeViewController.m */; };
+		CFCF4D441E0513E5007BD328 /* YHTSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA9D1D1186FC00B57D2C /* YHTSignViewController.m */; };
+		CFCF4D451E0513E5007BD328 /* YHTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA6F1D11848A00B57D2C /* YHTConstants.m */; };
+		CFCF4D461E0513E5007BD328 /* YHTError.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA711D11848A00B57D2C /* YHTError.m */; };
+		CFCF4D471E0513E5007BD328 /* YHTHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA731D11848A00B57D2C /* YHTHttpRequest.m */; };
+		CFCF4D481E0513E5007BD328 /* YHTContract.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA791D1185FE00B57D2C /* YHTContract.m */; };
+		CFCF4D491E0513E5007BD328 /* YHTContractOperateMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7B1D1185FE00B57D2C /* YHTContractOperateMenu.m */; };
+		CFCF4D4A1E0513E5007BD328 /* YHTContractPreOperateMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */; };
+		CFCF4D4B1E0513E5007BD328 /* YHTContractPartner.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7D1D1185FE00B57D2C /* YHTContractPartner.m */; };
+		CFCF4D4C1E0513E5007BD328 /* YHTContractWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA7F1D1185FE00B57D2C /* YHTContractWebView.m */; };
+		CFCF4D4D1E0513E5007BD328 /* YHTSign.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA821D1185FE00B57D2C /* YHTSign.m */; };
+		CFCF4D4E1E0513E5007BD328 /* YHTSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA841D1185FE00B57D2C /* YHTSignView.m */; };
+		CFCF4D501E0513E5007BD328 /* BasePopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC51CEC4B5600637FF6 /* BasePopMenu.m */; };
+		CFCF4D511E0513E5007BD328 /* BasePopTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC71CEC4B5600637FF6 /* BasePopTableView.m */; };
+		CFCF4D521E0513E5007BD328 /* BaseWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BC91CEC4B5600637FF6 /* BaseWebView.m */; };
+		CFCF4D531E0513E5007BD328 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB51CEC4A0C00637FF6 /* NSData+Base64.m */; };
+		CFCF4D541E0513E5007BD328 /* NSNumber+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB71CEC4A0C00637FF6 /* NSNumber+Wqz.m */; };
+		CFCF4D551E0513E5007BD328 /* NSString+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB91CEC4A0C00637FF6 /* NSString+Wqz.m */; };
+		CFCF4D561E0513E5007BD328 /* UIButton+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBB1CEC4A0C00637FF6 /* UIButton+Wqz.m */; };
+		CFCF4D571E0513E5007BD328 /* UIImage+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBD1CEC4A0C00637FF6 /* UIImage+Wqz.m */; };
+		CFCF4D581E051469007BD328 /* YHT_NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */; };
+		CFCF4D591E051469007BD328 /* YHT_NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA541D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m */; };
+		CFCF4D5A1E051469007BD328 /* YHT_PPSSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA571D0FDFAD00B57D2C /* YHT_PPSSignatureView.m */; };
+		CFCF4D5D1E0516BC007BD328 /* MBProgressHUD+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4D5C1E0516BC007BD328 /* MBProgressHUD+Wqz.m */; };
 		CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF258B31D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -78,22 +73,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		CF67F6711CC8B1F100BBB7AF /* Copy Files */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				CF309C121CEC809800637FF6 /* YHTSdk.bundle in Copy Files */,
-				CF309BD91CEC625600637FF6 /* YHTSdk.h in Copy Files */,
-			);
-			name = "Copy Files";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		8348C4A7459945511BC4E404 /* Pods-CloudContract_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudContract_SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK.release.xcconfig"; sourceTree = "<group>"; };
+		8D89880A687DC8BAB5F00825 /* Pods-CloudContract_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudContract_SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		CF1BEF121CE7182800A55417 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		CF1BEF131CE7182800A55417 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		CF1BEF141CE7182800A55417 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -140,7 +122,6 @@
 		CF67F6511CC8B04F00BBB7AF /* CloudContract_SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudContract_SDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF67F6551CC8B04F00BBB7AF /* CloudContract_SDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CloudContract_SDKTests.m; path = CloudContract_SDKTests/CloudContract_SDKTests.m; sourceTree = SOURCE_ROOT; };
 		CF67F6571CC8B04F00BBB7AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF67F6731CC8B1F100BBB7AF /* libYHT_SDK_1.0.0.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYHT_SDK_1.0.0.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF67F6D01CCDEAB400BBB7AF /* YHTSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSdk.h; sourceTree = "<group>"; };
 		CF67F6D11CCDEAB400BBB7AF /* YHTSdk.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSdk.m; sourceTree = "<group>"; };
 		CF772EF31D06A504006005DF /* YHTSDKDemoConfirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSDKDemoConfirmViewController.h; sourceTree = "<group>"; };
@@ -155,16 +136,14 @@
 		CFA7DA2A1CE9E49700D6EDD3 /* YHTSDKDemoContract.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoContract.m; sourceTree = "<group>"; };
 		CFB9F2561D0304AD00262E49 /* YHTSDKDemoTokenListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSDKDemoTokenListener.h; sourceTree = "<group>"; };
 		CFB9F2571D0304AD00262E49 /* YHTSDKDemoTokenListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoTokenListener.m; sourceTree = "<group>"; };
+		CFCF4D381E051155007BD328 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "../../Library/Developer/Xcode/DerivedData/CloudContract_SDK-ejuufliyyrnabtamovrqnwzkwqxf/Build/Products/Debug-iphonesimulator/MBProgressHUD/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		CFCF4D3B1E051209007BD328 /* libPods-CloudContract_SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-CloudContract_SDK.a"; path = "../../Library/Developer/Xcode/DerivedData/CloudContract_SDK-ejuufliyyrnabtamovrqnwzkwqxf/Build/Products/Debug-iphonesimulator/libPods-CloudContract_SDK.a"; sourceTree = "<group>"; };
+		CFCF4D5B1E0516BC007BD328 /* MBProgressHUD+Wqz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Wqz.h"; sourceTree = "<group>"; };
+		CFCF4D5C1E0516BC007BD328 /* MBProgressHUD+Wqz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Wqz.m"; sourceTree = "<group>"; };
 		CFD4077D1DFFE147004C1609 /* YHTPreContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTPreContractContentViewController.h; sourceTree = "<group>"; };
 		CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTPreContractContentViewController.m; sourceTree = "<group>"; };
 		CFD407801DFFF500004C1609 /* YHTContractPreOperateMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractPreOperateMenu.h; sourceTree = "<group>"; };
 		CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractPreOperateMenu.m; sourceTree = "<group>"; };
-		CFDEBA4A1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YHT_MBProgressHUD+Wqz.h"; sourceTree = "<group>"; };
-		CFDEBA4B1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YHT_MBProgressHUD+Wqz.m"; sourceTree = "<group>"; };
-		CFDEBA4C1D0FDFAD00B57D2C /* YHT_MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_MBProgressHUD.h; sourceTree = "<group>"; };
-		CFDEBA4D1D0FDFAD00B57D2C /* YHT_MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_MBProgressHUD.m; sourceTree = "<group>"; };
-		CFDEBA4E1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_MBProgressHUDManager.h; sourceTree = "<group>"; };
-		CFDEBA4F1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_MBProgressHUDManager.m; sourceTree = "<group>"; };
 		CFDEBA511D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_NJKWebViewProgress.h; sourceTree = "<group>"; };
 		CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_NJKWebViewProgress.m; sourceTree = "<group>"; };
 		CFDEBA531D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_NJKWebViewProgressView.h; sourceTree = "<group>"; };
@@ -203,6 +182,7 @@
 		CFDEBA9D1D1186FC00B57D2C /* YHTSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignViewController.m; sourceTree = "<group>"; };
 		CFF258B21D0ED6010093F0CD /* YHTSDKDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSDKDemoBaseViewController.h; sourceTree = "<group>"; };
 		CFF258B31D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoBaseViewController.m; sourceTree = "<group>"; };
+		F468922D5309885756F55EBA /* libPods-CloudContract_SDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CloudContract_SDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +190,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF309BD41CEC5CD300637FF6 /* libYHT_SDK_1.0.0.a in Frameworks */,
+				05FE03CCBADD3226B5DB76DD /* libPods-CloudContract_SDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,16 +201,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF67F6701CC8B1F100BBB7AF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08EFED2FB027B0E1A9633347 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCF4D3B1E051209007BD328 /* libPods-CloudContract_SDK.a */,
+				CFCF4D381E051155007BD328 /* libMBProgressHUD.a */,
+				F468922D5309885756F55EBA /* libPods-CloudContract_SDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C378AD4984CB973E714D2F01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D89880A687DC8BAB5F00825 /* Pods-CloudContract_SDK.debug.xcconfig */,
+				8348C4A7459945511BC4E404 /* Pods-CloudContract_SDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CF1BEF111CE7182800A55417 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +252,8 @@
 		CF309BB31CEC4A0C00637FF6 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
+				CFCF4D5B1E0516BC007BD328 /* MBProgressHUD+Wqz.h */,
+				CFCF4D5C1E0516BC007BD328 /* MBProgressHUD+Wqz.m */,
 				CF309BB41CEC4A0C00637FF6 /* NSData+Base64.h */,
 				CF309BB51CEC4A0C00637FF6 /* NSData+Base64.m */,
 				CF309BB61CEC4A0C00637FF6 /* NSNumber+Wqz.h */,
@@ -295,6 +289,8 @@
 				CF67F6541CC8B04F00BBB7AF /* CloudContract_SDKTests */,
 				CF67F6391CC8B04F00BBB7AF /* Products */,
 				CF67F6831CC8B68F00BBB7AF /* YHT_SDK_1.0.0 */,
+				C378AD4984CB973E714D2F01 /* Pods */,
+				08EFED2FB027B0E1A9633347 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,7 +299,6 @@
 			children = (
 				CF67F6381CC8B04F00BBB7AF /* CloudContract_SDK.app */,
 				CF67F6511CC8B04F00BBB7AF /* CloudContract_SDKTests.xctest */,
-				CF67F6731CC8B1F100BBB7AF /* libYHT_SDK_1.0.0.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -407,24 +402,10 @@
 		CFDEBA481D0FDFAD00B57D2C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				CFDEBA491D0FDFAD00B57D2C /* YHT_MBProgressHUD */,
 				CFDEBA501D0FDFAD00B57D2C /* YHT_NJKWebViewProgress */,
 				CFDEBA551D0FDFAD00B57D2C /* YHT_PPSSignatureView */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		CFDEBA491D0FDFAD00B57D2C /* YHT_MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				CFDEBA4A1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.h */,
-				CFDEBA4B1D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m */,
-				CFDEBA4C1D0FDFAD00B57D2C /* YHT_MBProgressHUD.h */,
-				CFDEBA4D1D0FDFAD00B57D2C /* YHT_MBProgressHUD.m */,
-				CFDEBA4E1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.h */,
-				CFDEBA4F1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m */,
-			);
-			path = YHT_MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		CFDEBA501D0FDFAD00B57D2C /* YHT_NJKWebViewProgress */ = {
@@ -497,9 +478,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF67F6651CC8B04F00BBB7AF /* Build configuration list for PBXNativeTarget "CloudContract_SDK" */;
 			buildPhases = (
+				219270EE362A028CB39EF3BB /* [CP] Check Pods Manifest.lock */,
 				CF67F6341CC8B04F00BBB7AF /* Sources */,
 				CF67F6351CC8B04F00BBB7AF /* Frameworks */,
 				CF67F6361CC8B04F00BBB7AF /* Resources */,
+				DC48882C1820EE3E293D0203 /* [CP] Embed Pods Frameworks */,
+				9303FB2FA43EBE16D6590BF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -528,24 +512,6 @@
 			productReference = CF67F6511CC8B04F00BBB7AF /* CloudContract_SDKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CF67F6721CC8B1F100BBB7AF /* YHT_SDK_1.0.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF67F6791CC8B1F100BBB7AF /* Build configuration list for PBXNativeTarget "YHT_SDK_1.0.0" */;
-			buildPhases = (
-				CF67F66F1CC8B1F100BBB7AF /* Sources */,
-				CF67F6701CC8B1F100BBB7AF /* Frameworks */,
-				CF67F6711CC8B1F100BBB7AF /* Copy Files */,
-				CF309BD71CEC61F300637FF6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = YHT_SDK_1.0.0;
-			productName = YHT_SDK_1.0.0;
-			productReference = CF67F6731CC8B1F100BBB7AF /* libYHT_SDK_1.0.0.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -562,9 +528,6 @@
 					CF67F6501CC8B04F00BBB7AF = {
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = CF67F6371CC8B04F00BBB7AF;
-					};
-					CF67F6721CC8B1F100BBB7AF = {
-						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -583,20 +546,11 @@
 			targets = (
 				CF67F6371CC8B04F00BBB7AF /* CloudContract_SDK */,
 				CF67F6501CC8B04F00BBB7AF /* CloudContract_SDKTests */,
-				CF67F6721CC8B1F100BBB7AF /* YHT_SDK_1.0.0 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CF309BD71CEC61F300637FF6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF309BD81CEC61F900637FF6 /* YHTSdk.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CF67F6361CC8B04F00BBB7AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -618,11 +572,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		219270EE362A028CB39EF3BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9303FB2FA43EBE16D6590BF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC48882C1820EE3E293D0203 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF67F6341CC8B04F00BBB7AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCF4D581E051469007BD328 /* YHT_NJKWebViewProgress.m in Sources */,
+				CFCF4D591E051469007BD328 /* YHT_NJKWebViewProgressView.m in Sources */,
+				CFCF4D5A1E051469007BD328 /* YHT_PPSSignatureView.m in Sources */,
+				CFCF4D3D1E0513E5007BD328 /* YHTSdk.m in Sources */,
+				CFCF4D3E1E0513E5007BD328 /* YHTContractManager.m in Sources */,
+				CFCF4D3F1E0513E5007BD328 /* YHTSignManager.m in Sources */,
+				CFCF4D401E0513E5007BD328 /* YHTTokenManager.m in Sources */,
+				CFCF4D411E0513E5007BD328 /* YHTContractContentViewController.m in Sources */,
+				CFCF4D421E0513E5007BD328 /* YHTPreContractContentViewController.m in Sources */,
+				CFCF4D431E0513E5007BD328 /* YHTSignMadeViewController.m in Sources */,
+				CFCF4D441E0513E5007BD328 /* YHTSignViewController.m in Sources */,
+				CFCF4D451E0513E5007BD328 /* YHTConstants.m in Sources */,
+				CFCF4D461E0513E5007BD328 /* YHTError.m in Sources */,
+				CFCF4D471E0513E5007BD328 /* YHTHttpRequest.m in Sources */,
+				CFCF4D481E0513E5007BD328 /* YHTContract.m in Sources */,
+				CFCF4D491E0513E5007BD328 /* YHTContractOperateMenu.m in Sources */,
+				CFCF4D5D1E0516BC007BD328 /* MBProgressHUD+Wqz.m in Sources */,
+				CFCF4D4A1E0513E5007BD328 /* YHTContractPreOperateMenu.m in Sources */,
+				CFCF4D4B1E0513E5007BD328 /* YHTContractPartner.m in Sources */,
+				CFCF4D4C1E0513E5007BD328 /* YHTContractWebView.m in Sources */,
+				CFCF4D4D1E0513E5007BD328 /* YHTSign.m in Sources */,
+				CFCF4D4E1E0513E5007BD328 /* YHTSignView.m in Sources */,
+				CFCF4D501E0513E5007BD328 /* BasePopMenu.m in Sources */,
+				CFCF4D511E0513E5007BD328 /* BasePopTableView.m in Sources */,
+				CFCF4D521E0513E5007BD328 /* BaseWebView.m in Sources */,
+				CFCF4D531E0513E5007BD328 /* NSData+Base64.m in Sources */,
+				CFCF4D541E0513E5007BD328 /* NSNumber+Wqz.m in Sources */,
+				CFCF4D551E0513E5007BD328 /* NSString+Wqz.m in Sources */,
+				CFCF4D561E0513E5007BD328 /* UIButton+Wqz.m in Sources */,
+				CFCF4D571E0513E5007BD328 /* UIImage+Wqz.m in Sources */,
 				CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */,
 				CF1BEF251CE7182800A55417 /* AFHTTPRequestOperation.m in Sources */,
 				CF1BEF261CE7182800A55417 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -648,45 +680,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF67F6561CC8B04F00BBB7AF /* CloudContract_SDKTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CF67F66F1CC8B1F100BBB7AF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CF309BCC1CEC4B5600637FF6 /* BaseWebView.m in Sources */,
-				CF309BC21CEC4A0C00637FF6 /* UIImage+Wqz.m in Sources */,
-				CF309BC11CEC4A0C00637FF6 /* UIButton+Wqz.m in Sources */,
-				CFDEBA5C1D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m in Sources */,
-				CFDEBA5A1D0FDFAD00B57D2C /* YHT_MBProgressHUDManager.m in Sources */,
-				CF309BBE1CEC4A0C00637FF6 /* NSData+Base64.m in Sources */,
-				CF309BCB1CEC4B5600637FF6 /* BasePopTableView.m in Sources */,
-				CF309BCA1CEC4B5600637FF6 /* BasePopMenu.m in Sources */,
-				CFDEBA861D1185FE00B57D2C /* YHTContractOperateMenu.m in Sources */,
-				CFDEBA8A1D1185FE00B57D2C /* YHTSignView.m in Sources */,
-				CFDEBA881D1185FE00B57D2C /* YHTContractWebView.m in Sources */,
-				CF309BC01CEC4A0C00637FF6 /* NSString+Wqz.m in Sources */,
-				CFDEBA761D11848A00B57D2C /* YHTHttpRequest.m in Sources */,
-				CFDEBA891D1185FE00B57D2C /* YHTSign.m in Sources */,
-				CF67F6D31CCDEAB400BBB7AF /* YHTSdk.m in Sources */,
-				CFDEBA741D11848A00B57D2C /* YHTConstants.m in Sources */,
-				CFDEBA9E1D1186FC00B57D2C /* YHTContractContentViewController.m in Sources */,
-				CFDEBA9F1D1186FC00B57D2C /* YHTSignMadeViewController.m in Sources */,
-				CFDEBA751D11848A00B57D2C /* YHTError.m in Sources */,
-				CF309BBF1CEC4A0C00637FF6 /* NSNumber+Wqz.m in Sources */,
-				CFDEBA5B1D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m in Sources */,
-				CFD407821DFFF500004C1609 /* YHTContractPreOperateMenu.m in Sources */,
-				CFDEBAA01D1186FC00B57D2C /* YHTSignViewController.m in Sources */,
-				CFDEBA951D1186D900B57D2C /* YHTContractManager.m in Sources */,
-				CFDEBA5D1D0FDFAD00B57D2C /* YHT_PPSSignatureView.m in Sources */,
-				CFDEBA581D0FDFAD00B57D2C /* YHT_MBProgressHUD+Wqz.m in Sources */,
-				CFDEBA871D1185FE00B57D2C /* YHTContractPartner.m in Sources */,
-				CFDEBA591D0FDFAD00B57D2C /* YHT_MBProgressHUD.m in Sources */,
-				CFDEBA971D1186D900B57D2C /* YHTTokenManager.m in Sources */,
-				CFDEBA851D1185FE00B57D2C /* YHTContract.m in Sources */,
-				CFD4077F1DFFE147004C1609 /* YHTPreContractContentViewController.m in Sources */,
-				CFDEBA961D1186D900B57D2C /* YHTSignManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +789,7 @@
 		};
 		CF67F6661CC8B04F00BBB7AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D89880A687DC8BAB5F00825 /* Pods-CloudContract_SDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -804,7 +798,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_CFLAGS = "-O2";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lx.CloudContract.CloudContract-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -813,6 +810,7 @@
 		};
 		CF67F6671CC8B04F00BBB7AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8348C4A7459945511BC4E404 /* Pods-CloudContract_SDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -820,7 +818,10 @@
 				INFOPLIST_FILE = CloudContract_SDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lx.CloudContract.CloudContract-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -851,26 +852,6 @@
 			};
 			name = Release;
 		};
-		CF67F67A1CC8B1F100BBB7AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CF67F67B1CC8B1F100BBB7AF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -897,15 +878,6 @@
 			buildConfigurations = (
 				CF67F6691CC8B04F00BBB7AF /* Debug */,
 				CF67F66A1CC8B04F00BBB7AF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF67F6791CC8B1F100BBB7AF /* Build configuration list for PBXNativeTarget "YHT_SDK_1.0.0" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF67F67A1CC8B1F100BBB7AF /* Debug */,
-				CF67F67B1CC8B1F100BBB7AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

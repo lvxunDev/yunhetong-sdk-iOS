@@ -1,12 +1,12 @@
 //
-//  YHT_MBProgressHUD+Wqz.m
+//  MBProgressHUD+Wqz.m
 //  CloudContract_SDK
 //
 //  Created by 吴清正 on 16/5/21.
 //  Copyright © 2016年 dazheng_wu. All rights reserved.
 //
 
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "UIImage+Wqz.h"
 #import "NSNumber+Wqz.h"
 #import "NSString+Wqz.h"
@@ -16,7 +16,7 @@
 #define kDefault_error_delay                        1.5
 
 static const void *hudFinishedBlockKey = &hudFinishedBlockKey;
-@implementation YHT_MBProgressHUD (Wqz)
+@implementation MBProgressHUD (Wqz)
 
 - (void)setBlock:(WypActionBlock) __aBlock {
     objc_setAssociatedObject(self, hudFinishedBlockKey, __aBlock, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -26,7 +26,7 @@ static const void *hudFinishedBlockKey = &hudFinishedBlockKey;
     if (__view == nil) {
         __view = [[UIApplication sharedApplication].windows lastObject];
     }
-    YHT_MBProgressHUD *__hud = [YHT_MBProgressHUD showHUDAddedTo:__view animated:YES];
+    MBProgressHUD *__hud = [MBProgressHUD showHUDAddedTo:__view animated:YES];
     [__hud setBlock:__aBlock];
 
     if ([NSString wqz_isNotEmpty:__text]) {
@@ -85,15 +85,15 @@ static const void *hudFinishedBlockKey = &hudFinishedBlockKey;
 
 
 #pragma mark - Message
-+ (YHT_MBProgressHUD *)showHTTPMessage:(NSString *)__message {
++ (MBProgressHUD *)showHTTPMessage:(NSString *)__message {
     return [self showHTTPMessage:__message toView:nil];
 }
 
-+ (YHT_MBProgressHUD *)showHTTPMessage:(NSString *)__message toView:(UIView *)__view {
++ (MBProgressHUD *)showHTTPMessage:(NSString *)__message toView:(UIView *)__view {
     if (__view == nil) {
         __view = [[UIApplication sharedApplication].windows lastObject];
     }
-    YHT_MBProgressHUD *__hud = [YHT_MBProgressHUD showHUDAddedTo:__view animated:YES];
+    MBProgressHUD *__hud = [MBProgressHUD showHUDAddedTo:__view animated:YES];
     __hud.labelText = __message;
     __hud.removeFromSuperViewOnHide = YES;
     __hud.dimBackground = YES;//蒙版

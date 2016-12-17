@@ -9,7 +9,7 @@
 #import "YHTSignMadeViewController.h"
 #import "YHT_PPSSignatureView.h"
 #import "UIButton+Wqz.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "NSData+Base64.h"
 
 @interface YHTSignMadeViewController ()<YHTHttpRequestDelegate>
@@ -147,7 +147,7 @@
 -(void)request:(YHTHttpRequest *)request didFinishLoadingWithResult:(id)result{
     [self.delegate onMadeSignSuccessed:self];
     if ([request.tag isEqualToString:@"GenerateSignature"]) {
-        [YHT_MBProgressHUD hideHUDWithBlock:^{
+        [MBProgressHUD hideHUDWithBlock:^{
             [self.navigationController popViewControllerAnimated:YES];
         }];
         
@@ -156,8 +156,8 @@
 
 - (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error{
     if ([request.tag isEqualToString:@"GenerateSignature"]) {
-        [YHT_MBProgressHUD hideHUDWithBlock:^{
-            [YHT_MBProgressHUD showError:error.localizedDescription];
+        [MBProgressHUD hideHUDWithBlock:^{
+            [MBProgressHUD showError:error.localizedDescription];
         }];
     }
 }

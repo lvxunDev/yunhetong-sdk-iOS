@@ -8,7 +8,7 @@
 
 #import "YHTSDKDemoConfirmViewController.h"
 #import "YHTSdk.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "YHTSDKDemoTokenListener.h"
 @interface YHTSDKDemoConfirmViewController ()
 @property (nonatomic, strong)NSNumber *contractID;
@@ -37,7 +37,7 @@
 
 - (IBAction)confirmBtn_Action:(id)sender {
 
-    [YHT_MBProgressHUD showHTTPMessage:@""];
+    [MBProgressHUD showHTTPMessage:@""];
 
     [[YHTSDKDemoTokenListener sharedManager] getTokenContractWithCompletionHander:^(id obj) {
         [[YHTTokenManager sharedManager] setTokenWithString:obj[@"token"]];

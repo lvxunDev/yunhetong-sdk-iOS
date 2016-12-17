@@ -7,7 +7,7 @@
 //
 
 #import "YHTPreContractContentViewController.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "YHTContractWebView.h"
 #import "YHTContractPartner.h"
 #import "YHTContractPreOperateMenu.h"
@@ -69,7 +69,7 @@
 
 #pragma mark - YHTHttpRequestDelegate
 - (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error{
-    [YHT_MBProgressHUD showError:error.localizedDescription];
+    [MBProgressHUD showError:error.localizedDescription];
 }
 
 - (void)request:(YHTHttpRequest *)request didFinishLoadingWithResult:(id)result{
@@ -77,7 +77,7 @@
         self.partner = [YHTContractPartner instanceWithDict:result[@"value"][@"partner"]];
 
     }else if ([request.tag isEqualToString:@"AllSignContract"]){
-        [YHT_MBProgressHUD showSuccess:@"签署成功"];
+        [MBProgressHUD showSuccess:@"签署成功"];
 //        [self webViewRefresh];
         self.navigationItem.rightBarButtonItem = nil;
     }

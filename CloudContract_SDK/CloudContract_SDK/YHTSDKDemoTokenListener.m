@@ -9,7 +9,7 @@
 #import "YHTSDKDemoTokenListener.h"
 #import "AFNetworking.h"
 #import "YHTSDKDemoContract.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 @interface YHTSDKDemoTokenListener()<YHTResetTokenDelegate>
 @property (nonatomic, strong)NSString *tokenStr;
 @property (nonatomic, strong)NSArray *contractArray;
@@ -32,13 +32,13 @@
     [[AFHTTPRequestOperationManager manager] GET:[YHTConstants urlByHost:kToken_URL]//这里的地址为第三方App从自己的服务器上获取'token'的url地址
                                       parameters:nil
                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                             [YHT_MBProgressHUD hideHUDWithBlock:^{
+                                             [MBProgressHUD hideHUDWithBlock:^{
                                                  resetTokenBlock(responseObject);
                                              }];
 
                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                             [YHT_MBProgressHUD hideHUDWithBlock:^{
-                                                 [YHT_MBProgressHUD showError:error.localizedDescription];
+                                             [MBProgressHUD hideHUDWithBlock:^{
+                                                 [MBProgressHUD showError:error.localizedDescription];
                                              }];
 
                                          }];
@@ -50,13 +50,13 @@
     [[AFHTTPRequestOperationManager manager] GET:[YHTConstants urlByHost:kTokenContract_URL]//这里的地址为第三方App从自己的服务器上创建合同获取'token'的url地址
                                       parameters:nil
                                          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                             [YHT_MBProgressHUD hideHUDWithBlock:^{
+                                             [MBProgressHUD hideHUDWithBlock:^{
                                                  resetTokenBlock(responseObject);
                                              }];
 
                                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                             [YHT_MBProgressHUD hideHUDWithBlock:^{
-                                                 [YHT_MBProgressHUD showError:error.localizedDescription];
+                                             [MBProgressHUD hideHUDWithBlock:^{
+                                                 [MBProgressHUD showError:error.localizedDescription];
                                              }];
 
                                          }];

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "MBProgressHUD.h"
 @interface YHTSDKDemoContract : NSObject
 
 /**

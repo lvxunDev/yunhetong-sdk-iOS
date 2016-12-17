@@ -8,7 +8,7 @@
 
 #import "YHTSDKDemoContractListViewController.h"
 #import "YHTSDKDemoContract.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "YHTSdk.h"
 @interface YHTSDKDemoContractListViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong)NSArray *dataArray;

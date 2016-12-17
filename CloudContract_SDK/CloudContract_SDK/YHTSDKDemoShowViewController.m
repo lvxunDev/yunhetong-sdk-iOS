@@ -7,11 +7,10 @@
 //
 
 #import "YHTSDKDemoShowViewController.h"
-
 #import "YHTSDKDemoContractListViewController.h"
 #import "YHTSDKDemoConfirmViewController.h"
 #import "YHTSdk.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "YHTSDKDemoTokenListener.h"
 #import "YHTSDKDemoContract.h"
 @interface YHTSDKDemoShowViewController ()
@@ -40,7 +39,7 @@
 }
 
 - (IBAction)partyB_Action:(id)sender {
-    [YHT_MBProgressHUD showHTTPMessage:@""];
+    [MBProgressHUD showHTTPMessage:@""];
     [[YHTSDKDemoTokenListener sharedManager] getTokenWithCompletionHander:^(id obj) {
         [[YHTTokenManager sharedManager] setTokenWithString:obj[@"value"][@"token"]];
         self.contractArray = [YHTSDKDemoContract pasingJSONWithDictionary:obj[@"value"]];

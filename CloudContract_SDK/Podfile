@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target 'CloudContract_SDK' do
+  pod 'MBProgressHUD', '~> 1.0.0'
+end

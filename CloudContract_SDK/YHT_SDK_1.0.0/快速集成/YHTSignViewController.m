@@ -8,7 +8,7 @@
 
 #import "YHTSignViewController.h"
 #import "UIImage+Wqz.h"
-#import "YHT_MBProgressHUD+Wqz.h"
+#import "MBProgressHUD+Wqz.h"
 #import "YHTSign.h"
 #import "YHTSignView.h"
 @interface YHTSignViewController ()<YHTHttpRequestDelegate>
@@ -34,7 +34,7 @@
                                                                              action:@selector(addSign)];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [YHT_MBProgressHUD showHTTPMessage:@""];
+        [MBProgressHUD showHTTPMessage:@""];
         [[YHTSignManager sharedManager] viewSignatureWithTag:@"ViewSignature"
                                                     delegate:self];
     });
@@ -57,18 +57,18 @@
 
 #pragma mark - YHTHttpRequestDelegate
 - (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error{
-    [YHT_MBProgressHUD showError:error.localizedDescription];
+    [MBProgressHUD showError:error.localizedDescription];
 }
 
 - (void)request:(YHTHttpRequest *)request didFinishLoadingWithResult:(id)result{
     if ([request.tag isEqualToString:@"ViewSignature"]) {
-        [YHT_MBProgressHUD hideHUDWithBlock:^{
+        [MBProgressHUD hideHUDWithBlock:^{
             self.sign = [YHTSign instanceWithDic:result[@"value"]];
             [self.view addSubview:self.signView];
         }];
 
     }else if ([request.tag isEqualToString:@"DeleteSignature"]){
-        [YHT_MBProgressHUD hideHUDWithBlock:^{
+        [MBProgressHUD hideHUDWithBlock:^{
             [_signView removeFromSuperview];
         }];
     }
@@ -85,7 +85,7 @@
     if (buttonIndex == 0) {
         return;
     }else if (buttonIndex == 1){
-        [YHT_MBProgressHUD showHTTPMessage:@""];
+        [MBProgressHUD showHTTPMessage:@""];
         [[YHTSignManager sharedManager] deleteSignatureWithTag:@"DeleteSignature"
                                                       delegate:self];
     }
