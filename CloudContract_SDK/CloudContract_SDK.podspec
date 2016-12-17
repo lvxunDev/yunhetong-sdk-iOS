@@ -17,17 +17,17 @@ Pod::Spec.new do |s|
 
   s.name         = "CloudContract_SDK"
   s.version      = "1.1.0"
-  s.summary      = "A short description of CloudContract_SDK."
+  s.summary      = "CloudContract_SDK""
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  ##  s.description  = <<-DESC
+  #                 DESC
 
-  s.homepage     = "https://github.com/lvxunDev/yunhetong-sdk-iOS/tree/dev_pig"
+  s.homepage     = "https://github.com/lvxunDev/g"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS/tree/dev_pig", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
