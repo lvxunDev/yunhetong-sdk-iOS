@@ -14,7 +14,7 @@
 #import "UIImage+Wqz.h"
 #import "YHTContract.h"
 
-@interface YHTPreContractContentViewController ()<YHTHttpRequestDelegate>
+@interface YHTPreContractContentViewController ()<YHTHttpRequestDelegate, ContractPreOperateDelegate>
 
 @property (nonatomic, strong)YHTContractPartner *partner;
 

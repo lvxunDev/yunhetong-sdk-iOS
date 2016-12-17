@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface YHTError : NSObject{
+@interface YHTError : NSError{
     NSString *_errorMsg;
 }
 

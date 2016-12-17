@@ -41,16 +41,15 @@ static const void *hudFinishedBlockKey = &hudFinishedBlockKey;
             }
             [__mutableText insertString:@"\n" atIndex:__index];
         }
-        __hud.labelText = __mutableText;
+        __hud.label.text = __mutableText;
     }else{
-        __hud.labelText = __text;
+        __hud.label.text = __text;
     }
 
     __hud.customView = [[UIImageView alloc] initWithImage:[UIImage imagesNamedFromCustomYHTSdkBundle:__icon]];
     __hud.mode = MBProgressHUDModeCustomView;
     __hud.removeFromSuperViewOnHide = YES;
-    [__hud hide:YES afterDelay:__delay];
-
+    [__hud hideAnimated:YES afterDelay:__delay];
 }
 
 #pragma mark - Success
@@ -94,9 +93,9 @@ static const void *hudFinishedBlockKey = &hudFinishedBlockKey;
         __view = [[UIApplication sharedApplication].windows lastObject];
     }
     MBProgressHUD *__hud = [MBProgressHUD showHUDAddedTo:__view animated:YES];
-    __hud.labelText = __message;
+    __hud.label.text = __message;
     __hud.removeFromSuperViewOnHide = YES;
-    __hud.dimBackground = YES;//蒙版
+//    __hud.dimBackground = YES;//蒙版
     return __hud;
 }
 

@@ -14,7 +14,7 @@
 #import "YHTContractOperateMenu.h"
 #import "UIImage+Wqz.h"
 #import "YHTContract.h"
-@interface YHTContractContentViewController ()<YHTHttpRequestDelegate>
+@interface YHTContractContentViewController ()<YHTHttpRequestDelegate, ContractOperateDelegate, YHTSignMadeViewDelegate>
 
 @property (nonatomic, strong)YHTContractPartner *partner;
 

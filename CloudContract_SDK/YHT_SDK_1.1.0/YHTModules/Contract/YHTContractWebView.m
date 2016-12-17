@@ -32,7 +32,7 @@
 
 - (void)refresh{
     NSMutableString *__urlStr = [NSMutableString stringWithString:[YHTConstants urlByHost:kViewWebContract_URL]];
-    [__urlStr appendFormat:@"?contractId=%lld", [self.contractID longValue]];
+    [__urlStr appendFormat:@"?contractId=%ld", [self.contractID longValue]];
     [__urlStr appendFormat:@"&token=%@", [YHTTokenManager sharedManager].token];
 
     self.contractURL = [NSURL URLWithString:__urlStr];
@@ -45,7 +45,7 @@
 
 - (void)preRefresh{
     NSMutableString *__urlStr = [NSMutableString stringWithString:[YHTConstants urlByHost:kPreViewWebContract_URL]];
-    [__urlStr appendFormat:@"?contractId=%lld", [self.contractID longValue]];
+    [__urlStr appendFormat:@"?contractId=%ld", [self.contractID longValue]];
     [__urlStr appendFormat:@"&token=%@", [YHTTokenManager sharedManager].token];
 
     self.contractURL = [NSURL URLWithString:__urlStr];

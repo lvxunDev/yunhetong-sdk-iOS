@@ -11,7 +11,7 @@
 #import "MBProgressHUD+Wqz.h"
 #import "YHTSign.h"
 #import "YHTSignView.h"
-@interface YHTSignViewController ()<YHTHttpRequestDelegate>
+@interface YHTSignViewController ()<YHTHttpRequestDelegate, YHTSignMadeViewDelegate, YHTSignViewDelegate>
 @property (nonatomic, strong)YHTSign *sign;
 @property (nonatomic, strong)YHTSignView *signView;
 @end

@@ -370,7 +370,7 @@ static PPSSignaturePoint ViewPointToGL(CGPoint viewPoint, CGRect bounds, GLKVect
 #pragma mark - Private
 
 - (void)updateStrokeColor {
-    CGFloat red, green, blue, alpha, white;
+    CGFloat red = 0.0, green = 0.0, blue = 0.0, alpha = 0.0, white = 0.0;
     if (effect && self.strokeColor && [self.strokeColor getRed:&red green:&green blue:&blue alpha:&alpha]) {
         effect.constantColor = GLKVector4Make(red, green, blue, alpha);
     } else if (effect && self.strokeColor && [self.strokeColor getWhite:&white alpha:&alpha]) {

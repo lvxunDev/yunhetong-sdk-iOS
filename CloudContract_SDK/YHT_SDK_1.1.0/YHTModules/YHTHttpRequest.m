@@ -76,7 +76,7 @@
         }
         str = [str substringFromIndex:1];
         str = [NSString stringWithFormat:@"%@?%@", _url, str];
-        NSString* encodedString = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//        NSString* encodedString = [str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
         request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:str]
                                           cachePolicy:NSURLRequestUseProtocolCachePolicy
                                       timeoutInterval:5.0f];
