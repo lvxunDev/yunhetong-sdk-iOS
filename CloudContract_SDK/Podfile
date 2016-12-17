@@ -1,6 +1,7 @@
 platform :ios, '7.0'
 
 target 'CloudContract_SDK' do
+  pod 'AFNetworking', '~> 3.0'
   pod 'MBProgressHUD', '~> 1.0.0'
   pod 'NJKWebViewProgress', '~> 0.2.3'
 end

@@ -29,38 +29,37 @@
 
 - (void)getTokenWithCompletionHander:(ResetTokenBlock)resetTokenBlock{
 
-    [[AFHTTPRequestOperationManager manager] GET:[YHTConstants urlByHost:kToken_URL]//这里的地址为第三方App从自己的服务器上获取'token'的url地址
-                                      parameters:nil
-                                         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                             [MBProgressHUD hideHUDWithBlock:^{
-                                                 resetTokenBlock(responseObject);
-                                             }];
+    [[AFHTTPSessionManager manager] GET:[YHTConstants urlByHost:kToken_URL] //这里的地址为第三方App从自己的服务器上获取'token'的url地址
+                             parameters:nil
+                               progress:nil
+                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                                    [MBProgressHUD hideHUDWithBlock:^{
+                                        resetTokenBlock(responseObject);
+                                    }];
 
-                                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                             [MBProgressHUD hideHUDWithBlock:^{
-                                                 [MBProgressHUD showError:error.localizedDescription];
-                                             }];
-
-                                         }];
-
+                                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                                    [MBProgressHUD hideHUDWithBlock:^{
+                                        [MBProgressHUD showError:error.localizedDescription];
+                                    }];
+                                    
+                                }];
 }
 
 - (void)getTokenContractWithCompletionHander:(ResetTokenBlock)resetTokenBlock{
 
-    [[AFHTTPRequestOperationManager manager] GET:[YHTConstants urlByHost:kTokenContract_URL]//这里的地址为第三方App从自己的服务器上创建合同获取'token'的url地址
-                                      parameters:nil
-                                         success:^(AFHTTPRequestOperation *operation, id responseObject) {
-                                             [MBProgressHUD hideHUDWithBlock:^{
-                                                 resetTokenBlock(responseObject);
-                                             }];
+    [[AFHTTPSessionManager manager] GET:[YHTConstants urlByHost:kTokenContract_URL] //这里的地址为第三方App从自己的服务器上创建合同获取'token'的url地址
+                             parameters:nil
+                               progress:nil
+                                success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+                                    [MBProgressHUD hideHUDWithBlock:^{
+                                        resetTokenBlock(responseObject);
+                                    }];
 
-                                         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-                                             [MBProgressHUD hideHUDWithBlock:^{
-                                                 [MBProgressHUD showError:error.localizedDescription];
-                                             }];
-
-                                         }];
-
+                                } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+                                    [MBProgressHUD hideHUDWithBlock:^{
+                                        [MBProgressHUD showError:error.localizedDescription];
+                                    }];
+                                }];
 }
 
 #pragma mark - YHTResetTokenDelegate

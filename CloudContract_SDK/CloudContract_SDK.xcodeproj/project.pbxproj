@@ -8,15 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		05FE03CCBADD3226B5DB76DD /* libPods-CloudContract_SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F468922D5309885756F55EBA /* libPods-CloudContract_SDK.a */; };
-		CF1BEF251CE7182800A55417 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF131CE7182800A55417 /* AFHTTPRequestOperation.m */; };
-		CF1BEF261CE7182800A55417 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF151CE7182800A55417 /* AFHTTPRequestOperationManager.m */; };
-		CF1BEF271CE7182800A55417 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF171CE7182800A55417 /* AFHTTPSessionManager.m */; };
-		CF1BEF281CE7182800A55417 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF1A1CE7182800A55417 /* AFNetworkReachabilityManager.m */; };
-		CF1BEF291CE7182800A55417 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF1C1CE7182800A55417 /* AFSecurityPolicy.m */; };
-		CF1BEF2A1CE7182800A55417 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF1E1CE7182800A55417 /* AFURLConnectionOperation.m */; };
-		CF1BEF2B1CE7182800A55417 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF201CE7182800A55417 /* AFURLRequestSerialization.m */; };
-		CF1BEF2C1CE7182800A55417 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF221CE7182800A55417 /* AFURLResponseSerialization.m */; };
-		CF1BEF2D1CE7182800A55417 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF1BEF241CE7182800A55417 /* AFURLSessionManager.m */; };
 		CF309BD51CEC5CD900637FF6 /* YHTSdk.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CF309BD01CEC57A900637FF6 /* YHTSdk.bundle */; };
 		CF67F63D1CC8B04F00BBB7AF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F63C1CC8B04F00BBB7AF /* main.m */; };
 		CF67F6401CC8B04F00BBB7AF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF67F63F1CC8B04F00BBB7AF /* AppDelegate.m */; };
@@ -74,25 +65,6 @@
 /* Begin PBXFileReference section */
 		8348C4A7459945511BC4E404 /* Pods-CloudContract_SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudContract_SDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK.release.xcconfig"; sourceTree = "<group>"; };
 		8D89880A687DC8BAB5F00825 /* Pods-CloudContract_SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CloudContract_SDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CloudContract_SDK/Pods-CloudContract_SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		CF1BEF121CE7182800A55417 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
-		CF1BEF131CE7182800A55417 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
-		CF1BEF141CE7182800A55417 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
-		CF1BEF151CE7182800A55417 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
-		CF1BEF161CE7182800A55417 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		CF1BEF171CE7182800A55417 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		CF1BEF181CE7182800A55417 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		CF1BEF191CE7182800A55417 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		CF1BEF1A1CE7182800A55417 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		CF1BEF1B1CE7182800A55417 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		CF1BEF1C1CE7182800A55417 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		CF1BEF1D1CE7182800A55417 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
-		CF1BEF1E1CE7182800A55417 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
-		CF1BEF1F1CE7182800A55417 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		CF1BEF201CE7182800A55417 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		CF1BEF211CE7182800A55417 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		CF1BEF221CE7182800A55417 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		CF1BEF231CE7182800A55417 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		CF1BEF241CE7182800A55417 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CF309BB41CEC4A0C00637FF6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		CF309BB51CEC4A0C00637FF6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		CF309BB61CEC4A0C00637FF6 /* NSNumber+Wqz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Wqz.h"; sourceTree = "<group>"; };
@@ -217,32 +189,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		CF1BEF111CE7182800A55417 /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				CF1BEF121CE7182800A55417 /* AFHTTPRequestOperation.h */,
-				CF1BEF131CE7182800A55417 /* AFHTTPRequestOperation.m */,
-				CF1BEF141CE7182800A55417 /* AFHTTPRequestOperationManager.h */,
-				CF1BEF151CE7182800A55417 /* AFHTTPRequestOperationManager.m */,
-				CF1BEF161CE7182800A55417 /* AFHTTPSessionManager.h */,
-				CF1BEF171CE7182800A55417 /* AFHTTPSessionManager.m */,
-				CF1BEF181CE7182800A55417 /* AFNetworking.h */,
-				CF1BEF191CE7182800A55417 /* AFNetworkReachabilityManager.h */,
-				CF1BEF1A1CE7182800A55417 /* AFNetworkReachabilityManager.m */,
-				CF1BEF1B1CE7182800A55417 /* AFSecurityPolicy.h */,
-				CF1BEF1C1CE7182800A55417 /* AFSecurityPolicy.m */,
-				CF1BEF1D1CE7182800A55417 /* AFURLConnectionOperation.h */,
-				CF1BEF1E1CE7182800A55417 /* AFURLConnectionOperation.m */,
-				CF1BEF1F1CE7182800A55417 /* AFURLRequestSerialization.h */,
-				CF1BEF201CE7182800A55417 /* AFURLRequestSerialization.m */,
-				CF1BEF211CE7182800A55417 /* AFURLResponseSerialization.h */,
-				CF1BEF221CE7182800A55417 /* AFURLResponseSerialization.m */,
-				CF1BEF231CE7182800A55417 /* AFURLSessionManager.h */,
-				CF1BEF241CE7182800A55417 /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
-			sourceTree = "<group>";
-		};
 		CF309BB31CEC4A0C00637FF6 /* Categorys */ = {
 			isa = PBXGroup;
 			children = (
@@ -278,7 +224,6 @@
 		CF67F62F1CC8B04F00BBB7AF = {
 			isa = PBXGroup;
 			children = (
-				CF1BEF111CE7182800A55417 /* AFNetworking */,
 				CF67F63A1CC8B04F00BBB7AF /* CloudContract_SDK */,
 				CF67F6541CC8B04F00BBB7AF /* CloudContract_SDKTests */,
 				CF67F6391CC8B04F00BBB7AF /* Products */,
@@ -636,19 +581,10 @@
 				CFCF4D561E0513E5007BD328 /* UIButton+Wqz.m in Sources */,
 				CFCF4D571E0513E5007BD328 /* UIImage+Wqz.m in Sources */,
 				CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */,
-				CF1BEF251CE7182800A55417 /* AFHTTPRequestOperation.m in Sources */,
-				CF1BEF261CE7182800A55417 /* AFHTTPRequestOperationManager.m in Sources */,
-				CF1BEF281CE7182800A55417 /* AFNetworkReachabilityManager.m in Sources */,
 				CFA7DA281CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m in Sources */,
-				CF1BEF2C1CE7182800A55417 /* AFURLResponseSerialization.m in Sources */,
 				CF772EF61D06A504006005DF /* YHTSDKDemoConfirmViewController.m in Sources */,
-				CF1BEF2A1CE7182800A55417 /* AFURLConnectionOperation.m in Sources */,
 				CFA7DA2B1CE9E49700D6EDD3 /* YHTSDKDemoContract.m in Sources */,
 				CFA5B1FF1D057B1600239C6A /* YHTSDKDemoShowViewController.m in Sources */,
-				CF1BEF291CE7182800A55417 /* AFSecurityPolicy.m in Sources */,
-				CF1BEF271CE7182800A55417 /* AFHTTPSessionManager.m in Sources */,
-				CF1BEF2B1CE7182800A55417 /* AFURLRequestSerialization.m in Sources */,
-				CF1BEF2D1CE7182800A55417 /* AFURLSessionManager.m in Sources */,
 				CF67F6401CC8B04F00BBB7AF /* AppDelegate.m in Sources */,
 				CF67F63D1CC8B04F00BBB7AF /* main.m in Sources */,
 				CFB9F2581D0304AD00262E49 /* YHTSDKDemoTokenListener.m in Sources */,
