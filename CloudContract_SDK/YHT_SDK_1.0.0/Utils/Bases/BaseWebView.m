@@ -7,8 +7,8 @@
 //
 
 #import "BaseWebView.h"
-#import "YHT_NJKWebViewProgressView.h"
-#import "YHT_NJKWebViewProgress.h"
+#import "NJKWebViewProgressView.h"
+#import "NJKWebViewProgress.h"
 
 @interface BaseWebView ()<UIWebViewDelegate, NJKWebViewProgressDelegate>
 
@@ -44,12 +44,12 @@
 }
 
 - (void)setupProgress {
-    self.progressProxy = [[YHT_NJKWebViewProgress alloc] init];
+    self.progressProxy = [[NJKWebViewProgress alloc] init];
     self.delegate = self.progressProxy;
     self.progressProxy.webViewProxyDelegate = self;
     self.progressProxy.progressDelegate = self;
 
-    self.progressView = [[YHT_NJKWebViewProgressView alloc] initWithFrame:CGRectZero];
+    self.progressView = [[NJKWebViewProgressView alloc] initWithFrame:CGRectZero];
 
     self.progressView.frame = CGRectMake(0, 64, self.frame.size.width, 2);
     self.progressView.progressBarView.alpha = 0.0f;
@@ -58,7 +58,7 @@
 
 
 #pragma mark - NJKWebViewProgressDelegate
--(void)webViewProgress:(YHT_NJKWebViewProgress *)webViewProgress updateProgress:(float)progress {
+-(void)webViewProgress:(NJKWebViewProgress *)webViewProgress updateProgress:(float)progress {
     [self.progressView setProgress:progress animated:YES];
 }
 

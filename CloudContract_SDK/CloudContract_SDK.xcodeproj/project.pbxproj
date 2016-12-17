@@ -56,8 +56,6 @@
 		CFCF4D551E0513E5007BD328 /* NSString+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BB91CEC4A0C00637FF6 /* NSString+Wqz.m */; };
 		CFCF4D561E0513E5007BD328 /* UIButton+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBB1CEC4A0C00637FF6 /* UIButton+Wqz.m */; };
 		CFCF4D571E0513E5007BD328 /* UIImage+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CF309BBD1CEC4A0C00637FF6 /* UIImage+Wqz.m */; };
-		CFCF4D581E051469007BD328 /* YHT_NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */; };
-		CFCF4D591E051469007BD328 /* YHT_NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA541D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m */; };
 		CFCF4D5A1E051469007BD328 /* YHT_PPSSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFDEBA571D0FDFAD00B57D2C /* YHT_PPSSignatureView.m */; };
 		CFCF4D5D1E0516BC007BD328 /* MBProgressHUD+Wqz.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4D5C1E0516BC007BD328 /* MBProgressHUD+Wqz.m */; };
 		CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF258B31D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m */; };
@@ -144,10 +142,6 @@
 		CFD4077E1DFFE147004C1609 /* YHTPreContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTPreContractContentViewController.m; sourceTree = "<group>"; };
 		CFD407801DFFF500004C1609 /* YHTContractPreOperateMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractPreOperateMenu.h; sourceTree = "<group>"; };
 		CFD407811DFFF500004C1609 /* YHTContractPreOperateMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractPreOperateMenu.m; sourceTree = "<group>"; };
-		CFDEBA511D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_NJKWebViewProgress.h; sourceTree = "<group>"; };
-		CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_NJKWebViewProgress.m; sourceTree = "<group>"; };
-		CFDEBA531D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_NJKWebViewProgressView.h; sourceTree = "<group>"; };
-		CFDEBA541D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		CFDEBA561D0FDFAD00B57D2C /* YHT_PPSSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHT_PPSSignatureView.h; sourceTree = "<group>"; };
 		CFDEBA571D0FDFAD00B57D2C /* YHT_PPSSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHT_PPSSignatureView.m; sourceTree = "<group>"; };
 		CFDEBA6E1D11848A00B57D2C /* YHTConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTConstants.h; sourceTree = "<group>"; };
@@ -402,21 +396,9 @@
 		CFDEBA481D0FDFAD00B57D2C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				CFDEBA501D0FDFAD00B57D2C /* YHT_NJKWebViewProgress */,
 				CFDEBA551D0FDFAD00B57D2C /* YHT_PPSSignatureView */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		CFDEBA501D0FDFAD00B57D2C /* YHT_NJKWebViewProgress */ = {
-			isa = PBXGroup;
-			children = (
-				CFDEBA511D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.h */,
-				CFDEBA521D0FDFAD00B57D2C /* YHT_NJKWebViewProgress.m */,
-				CFDEBA531D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.h */,
-				CFDEBA541D0FDFAD00B57D2C /* YHT_NJKWebViewProgressView.m */,
-			);
-			path = YHT_NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 		CFDEBA551D0FDFAD00B57D2C /* YHT_PPSSignatureView */ = {
@@ -625,8 +607,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFCF4D581E051469007BD328 /* YHT_NJKWebViewProgress.m in Sources */,
-				CFCF4D591E051469007BD328 /* YHT_NJKWebViewProgressView.m in Sources */,
 				CFCF4D5A1E051469007BD328 /* YHT_PPSSignatureView.m in Sources */,
 				CFCF4D3D1E0513E5007BD328 /* YHTSdk.m in Sources */,
 				CFCF4D3E1E0513E5007BD328 /* YHTContractManager.m in Sources */,

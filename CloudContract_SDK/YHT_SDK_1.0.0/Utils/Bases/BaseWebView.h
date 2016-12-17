@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class YHT_NJKWebViewProgress;
-@class YHT_NJKWebViewProgressView;
+@class NJKWebViewProgress;
+@class NJKWebViewProgressView;
 
 @interface BaseWebView : UIWebView
 
-@property (nonatomic, strong)YHT_NJKWebViewProgressView *progressView;
+@property (nonatomic, strong)NJKWebViewProgressView *progressView;
 
-@property (nonatomic, strong)YHT_NJKWebViewProgress *progressProxy;
+@property (nonatomic, strong)NJKWebViewProgress *progressProxy;
 
 @end
