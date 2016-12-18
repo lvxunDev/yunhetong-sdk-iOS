@@ -6,13 +6,14 @@
 ### 1. 集成准备
 ##### 1.1 获取 AppId
 登录云合同 SDK 开发者平台，注册应用，获取得到 AppId。
-##### 1.2 下载 SDK
-下载[云合同SDK][1]并解压缩
+##### 1.2 在你的工程中引入 SDK
+<!--下载[云合同SDK][1]并解压缩-->
+ Installation with CocoaPods：  pod 'CloudContract_SDK', '~> 1.1.1’
 ##### 1.3 导入 SDK
-a. 将SDK文件中包含的文件添加到你所建立的工程中。
+a. 在 Info.plist 中加入 App Transport Security Settings 设置 Allow Arbitrary Loads 值为 YES
 
-b. 在工程中引入 SDK 之后，需要在编译时添加 -ObjC 编译选项。
-方法：程序 Target -> Buid Settings -> Linking 下 Other Linker Flags 项添加 -ObjC。
+
+b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Compile Sources 中删除 NSData+Base64.m 即可
 
 
 ### 2. 基本功能集成
