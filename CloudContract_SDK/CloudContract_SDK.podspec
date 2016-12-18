@@ -20,19 +20,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {'CloudContract_SDK' => ['YHT_SDK_1.1.0/YHTModules/YHTSdk.bundle'] }
   s.dependency 'MBProgressHUD', '~> 1.0.0'
   s.dependency 'NJKWebViewProgress', '~> 0.2.3'
-  s.subspec 'Utils' do |Utils|
-	Utils.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/Utils/*"
-  end
-
-  s.subspec 'YHTModules' do |YHTModules|
-        YHTModules.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/*"
-  end
-
-  s.subspec 'ManualIntegration' do |ManualIntegration|
-        ManualIntegration.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/ManualIntegration/*"
-  end
-
-  s.subspec 'AutoIntegration' do |AutoIntegration|
-        AutoIntegration.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/AutoIntegration/*"
-  end
 end
