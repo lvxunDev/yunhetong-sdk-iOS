@@ -42,13 +42,13 @@
 		CFCF4E0F1E064C68007BD328 /* YHTSdk.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DE71E064C68007BD328 /* YHTSdk.m */; };
 		CFCF4E101E064C68007BD328 /* YHTSign.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DE91E064C68007BD328 /* YHTSign.m */; };
 		CFCF4E111E064C68007BD328 /* YHTSignView.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DEB1E064C68007BD328 /* YHTSignView.m */; };
-		CFCF4E121E064C68007BD328 /* YHTContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DEE1E064C68007BD328 /* YHTContractContentViewController.m */; };
-		CFCF4E131E064C68007BD328 /* YHTPreContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DF01E064C68007BD328 /* YHTPreContractContentViewController.m */; };
-		CFCF4E141E064C68007BD328 /* YHTSignMadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DF21E064C68007BD328 /* YHTSignMadeViewController.m */; };
-		CFCF4E151E064C68007BD328 /* YHTSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DF41E064C68007BD328 /* YHTSignViewController.m */; };
-		CFCF4E161E064C68007BD328 /* YHTContractManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DF71E064C68007BD328 /* YHTContractManager.m */; };
-		CFCF4E171E064C68007BD328 /* YHTSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DF91E064C68007BD328 /* YHTSignManager.m */; };
-		CFCF4E181E064C68007BD328 /* YHTTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4DFB1E064C68007BD328 /* YHTTokenManager.m */; };
+		CFCF4E291E064F4A007BD328 /* YHTContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E1B1E064F4A007BD328 /* YHTContractContentViewController.m */; };
+		CFCF4E2A1E064F4A007BD328 /* YHTPreContractContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E1D1E064F4A007BD328 /* YHTPreContractContentViewController.m */; };
+		CFCF4E2B1E064F4A007BD328 /* YHTSignMadeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E1F1E064F4A007BD328 /* YHTSignMadeViewController.m */; };
+		CFCF4E2C1E064F4A007BD328 /* YHTSignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E211E064F4A007BD328 /* YHTSignViewController.m */; };
+		CFCF4E2D1E064F4A007BD328 /* YHTContractManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E241E064F4A007BD328 /* YHTContractManager.m */; };
+		CFCF4E2E1E064F4A007BD328 /* YHTSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E261E064F4A007BD328 /* YHTSignManager.m */; };
+		CFCF4E2F1E064F4A007BD328 /* YHTTokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CFCF4E281E064F4A007BD328 /* YHTTokenManager.m */; };
 		CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF258B31D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -132,20 +132,20 @@
 		CFCF4DE91E064C68007BD328 /* YHTSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSign.m; sourceTree = "<group>"; };
 		CFCF4DEA1E064C68007BD328 /* YHTSignView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignView.h; sourceTree = "<group>"; };
 		CFCF4DEB1E064C68007BD328 /* YHTSignView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignView.m; sourceTree = "<group>"; };
-		CFCF4DED1E064C68007BD328 /* YHTContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractContentViewController.h; sourceTree = "<group>"; };
-		CFCF4DEE1E064C68007BD328 /* YHTContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractContentViewController.m; sourceTree = "<group>"; };
-		CFCF4DEF1E064C68007BD328 /* YHTPreContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTPreContractContentViewController.h; sourceTree = "<group>"; };
-		CFCF4DF01E064C68007BD328 /* YHTPreContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTPreContractContentViewController.m; sourceTree = "<group>"; };
-		CFCF4DF11E064C68007BD328 /* YHTSignMadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignMadeViewController.h; sourceTree = "<group>"; };
-		CFCF4DF21E064C68007BD328 /* YHTSignMadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignMadeViewController.m; sourceTree = "<group>"; };
-		CFCF4DF31E064C68007BD328 /* YHTSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignViewController.h; sourceTree = "<group>"; };
-		CFCF4DF41E064C68007BD328 /* YHTSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignViewController.m; sourceTree = "<group>"; };
-		CFCF4DF61E064C68007BD328 /* YHTContractManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractManager.h; sourceTree = "<group>"; };
-		CFCF4DF71E064C68007BD328 /* YHTContractManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractManager.m; sourceTree = "<group>"; };
-		CFCF4DF81E064C68007BD328 /* YHTSignManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignManager.h; sourceTree = "<group>"; };
-		CFCF4DF91E064C68007BD328 /* YHTSignManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignManager.m; sourceTree = "<group>"; };
-		CFCF4DFA1E064C68007BD328 /* YHTTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTTokenManager.h; sourceTree = "<group>"; };
-		CFCF4DFB1E064C68007BD328 /* YHTTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTokenManager.m; sourceTree = "<group>"; };
+		CFCF4E1A1E064F4A007BD328 /* YHTContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractContentViewController.h; sourceTree = "<group>"; };
+		CFCF4E1B1E064F4A007BD328 /* YHTContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractContentViewController.m; sourceTree = "<group>"; };
+		CFCF4E1C1E064F4A007BD328 /* YHTPreContractContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTPreContractContentViewController.h; sourceTree = "<group>"; };
+		CFCF4E1D1E064F4A007BD328 /* YHTPreContractContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTPreContractContentViewController.m; sourceTree = "<group>"; };
+		CFCF4E1E1E064F4A007BD328 /* YHTSignMadeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignMadeViewController.h; sourceTree = "<group>"; };
+		CFCF4E1F1E064F4A007BD328 /* YHTSignMadeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignMadeViewController.m; sourceTree = "<group>"; };
+		CFCF4E201E064F4A007BD328 /* YHTSignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignViewController.h; sourceTree = "<group>"; };
+		CFCF4E211E064F4A007BD328 /* YHTSignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignViewController.m; sourceTree = "<group>"; };
+		CFCF4E231E064F4A007BD328 /* YHTContractManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTContractManager.h; sourceTree = "<group>"; };
+		CFCF4E241E064F4A007BD328 /* YHTContractManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTContractManager.m; sourceTree = "<group>"; };
+		CFCF4E251E064F4A007BD328 /* YHTSignManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSignManager.h; sourceTree = "<group>"; };
+		CFCF4E261E064F4A007BD328 /* YHTSignManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSignManager.m; sourceTree = "<group>"; };
+		CFCF4E271E064F4A007BD328 /* YHTTokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTTokenManager.h; sourceTree = "<group>"; };
+		CFCF4E281E064F4A007BD328 /* YHTTokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTTokenManager.m; sourceTree = "<group>"; };
 		CFF258B21D0ED6010093F0CD /* YHTSDKDemoBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTSDKDemoBaseViewController.h; sourceTree = "<group>"; };
 		CFF258B31D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTSDKDemoBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -257,6 +257,8 @@
 			children = (
 				CFCF4DBF1E064C68007BD328 /* Utils */,
 				CFCF4DD21E064C68007BD328 /* YHTModules */,
+				CFCF4E191E064F4A007BD328 /* AutoIntegration */,
+				CFCF4E221E064F4A007BD328 /* ManualIntegration */,
 			);
 			path = YHT_SDK_1.1.0;
 			sourceTree = "<group>";
@@ -314,38 +316,36 @@
 				CFCF4DE91E064C68007BD328 /* YHTSign.m */,
 				CFCF4DEA1E064C68007BD328 /* YHTSignView.h */,
 				CFCF4DEB1E064C68007BD328 /* YHTSignView.m */,
-				CFCF4DEC1E064C68007BD328 /* 快速集成 */,
-				CFCF4DF51E064C68007BD328 /* 手动集成 */,
 			);
 			path = YHTModules;
 			sourceTree = "<group>";
 		};
-		CFCF4DEC1E064C68007BD328 /* 快速集成 */ = {
+		CFCF4E191E064F4A007BD328 /* AutoIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				CFCF4DED1E064C68007BD328 /* YHTContractContentViewController.h */,
-				CFCF4DEE1E064C68007BD328 /* YHTContractContentViewController.m */,
-				CFCF4DEF1E064C68007BD328 /* YHTPreContractContentViewController.h */,
-				CFCF4DF01E064C68007BD328 /* YHTPreContractContentViewController.m */,
-				CFCF4DF11E064C68007BD328 /* YHTSignMadeViewController.h */,
-				CFCF4DF21E064C68007BD328 /* YHTSignMadeViewController.m */,
-				CFCF4DF31E064C68007BD328 /* YHTSignViewController.h */,
-				CFCF4DF41E064C68007BD328 /* YHTSignViewController.m */,
+				CFCF4E1A1E064F4A007BD328 /* YHTContractContentViewController.h */,
+				CFCF4E1B1E064F4A007BD328 /* YHTContractContentViewController.m */,
+				CFCF4E1C1E064F4A007BD328 /* YHTPreContractContentViewController.h */,
+				CFCF4E1D1E064F4A007BD328 /* YHTPreContractContentViewController.m */,
+				CFCF4E1E1E064F4A007BD328 /* YHTSignMadeViewController.h */,
+				CFCF4E1F1E064F4A007BD328 /* YHTSignMadeViewController.m */,
+				CFCF4E201E064F4A007BD328 /* YHTSignViewController.h */,
+				CFCF4E211E064F4A007BD328 /* YHTSignViewController.m */,
 			);
-			path = "快速集成";
+			path = AutoIntegration;
 			sourceTree = "<group>";
 		};
-		CFCF4DF51E064C68007BD328 /* 手动集成 */ = {
+		CFCF4E221E064F4A007BD328 /* ManualIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				CFCF4DF61E064C68007BD328 /* YHTContractManager.h */,
-				CFCF4DF71E064C68007BD328 /* YHTContractManager.m */,
-				CFCF4DF81E064C68007BD328 /* YHTSignManager.h */,
-				CFCF4DF91E064C68007BD328 /* YHTSignManager.m */,
-				CFCF4DFA1E064C68007BD328 /* YHTTokenManager.h */,
-				CFCF4DFB1E064C68007BD328 /* YHTTokenManager.m */,
+				CFCF4E231E064F4A007BD328 /* YHTContractManager.h */,
+				CFCF4E241E064F4A007BD328 /* YHTContractManager.m */,
+				CFCF4E251E064F4A007BD328 /* YHTSignManager.h */,
+				CFCF4E261E064F4A007BD328 /* YHTSignManager.m */,
+				CFCF4E271E064F4A007BD328 /* YHTTokenManager.h */,
+				CFCF4E281E064F4A007BD328 /* YHTTokenManager.m */,
 			);
-			path = "手动集成";
+			path = ManualIntegration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,28 +507,28 @@
 				CFCF4E101E064C68007BD328 /* YHTSign.m in Sources */,
 				CFCF4E081E064C68007BD328 /* YHTContractOperateMenu.m in Sources */,
 				CFCF4E061E064C68007BD328 /* YHTConstants.m in Sources */,
-				CFCF4E161E064C68007BD328 /* YHTContractManager.m in Sources */,
+				CFCF4E2D1E064F4A007BD328 /* YHTContractManager.m in Sources */,
 				CFCF4E071E064C68007BD328 /* YHTContract.m in Sources */,
 				CFF258B41D0ED6010093F0CD /* YHTSDKDemoBaseViewController.m in Sources */,
 				CFCF4E111E064C68007BD328 /* YHTSignView.m in Sources */,
-				CFCF4E181E064C68007BD328 /* YHTTokenManager.m in Sources */,
+				CFCF4E2F1E064F4A007BD328 /* YHTTokenManager.m in Sources */,
 				CFA7DA281CE9E18500D6EDD3 /* YHTSDKDemoContractListViewController.m in Sources */,
 				CFCF4E0D1E064C68007BD328 /* YHTHttpRequest.m in Sources */,
 				CFCF4E021E064C68007BD328 /* NSString+Wqz.m in Sources */,
 				CFCF4E091E064C68007BD328 /* YHTContractPartner.m in Sources */,
 				CFCF4E0F1E064C68007BD328 /* YHTSdk.m in Sources */,
 				CFCF4DFE1E064C68007BD328 /* BaseWebView.m in Sources */,
-				CFCF4E121E064C68007BD328 /* YHTContractContentViewController.m in Sources */,
+				CFCF4E291E064F4A007BD328 /* YHTContractContentViewController.m in Sources */,
 				CFCF4E0A1E064C68007BD328 /* YHTContractPreOperateMenu.m in Sources */,
 				CFCF4DFD1E064C68007BD328 /* BasePopTableView.m in Sources */,
 				CFCF4E011E064C68007BD328 /* NSNumber+Wqz.m in Sources */,
-				CFCF4E141E064C68007BD328 /* YHTSignMadeViewController.m in Sources */,
-				CFCF4E171E064C68007BD328 /* YHTSignManager.m in Sources */,
+				CFCF4E2B1E064F4A007BD328 /* YHTSignMadeViewController.m in Sources */,
+				CFCF4E2E1E064F4A007BD328 /* YHTSignManager.m in Sources */,
 				CFCF4DFF1E064C68007BD328 /* MBProgressHUD+Wqz.m in Sources */,
 				CF772EF61D06A504006005DF /* YHTSDKDemoConfirmViewController.m in Sources */,
 				CFA7DA2B1CE9E49700D6EDD3 /* YHTSDKDemoContract.m in Sources */,
 				CFA5B1FF1D057B1600239C6A /* YHTSDKDemoShowViewController.m in Sources */,
-				CFCF4E151E064C68007BD328 /* YHTSignViewController.m in Sources */,
+				CFCF4E2C1E064F4A007BD328 /* YHTSignViewController.m in Sources */,
 				CFCF4DFC1E064C68007BD328 /* BasePopMenu.m in Sources */,
 				CF67F6401CC8B04F00BBB7AF /* AppDelegate.m in Sources */,
 				CFCF4E0B1E064C68007BD328 /* YHTContractWebView.m in Sources */,
@@ -536,7 +536,7 @@
 				CFCF4E041E064C68007BD328 /* UIImage+Wqz.m in Sources */,
 				CFCF4E0C1E064C68007BD328 /* YHTError.m in Sources */,
 				CFCF4E001E064C68007BD328 /* NSData+Base64.m in Sources */,
-				CFCF4E131E064C68007BD328 /* YHTPreContractContentViewController.m in Sources */,
+				CFCF4E2A1E064F4A007BD328 /* YHTPreContractContentViewController.m in Sources */,
 				CFB9F2581D0304AD00262E49 /* YHTSDKDemoTokenListener.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
