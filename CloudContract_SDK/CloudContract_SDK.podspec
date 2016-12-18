@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CloudContract_SDK"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "This is a CloudContract_SDK"
   s.homepage     = "https://github.com/lvxunDev/yunhetong-sdk-iOS"
   s.license      = "Copyright (c) 2016年 YHT. All rights reserved."
@@ -17,7 +17,22 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => "#{s.version}" }
   s.source_files  = "CloudContract_SDK/YHT_SDK_1.1.0/Utils/*" , "CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/*" ,"CloudContract_SDK/YHT_SDK_1.1.0/ManualIntegration/*", "CloudContract_SDK/YHT_SDK_1.1.0/AutoIntegration/*"
   s.requires_arc = true
-
+  s.resource_bundles = {'CloudContract_SDK' => ['YHT_SDK_1.1.0/YHTModules/YHTSdk.bundle'] }
   s.dependency 'MBProgressHUD', '~> 1.0.0'
   s.dependency 'NJKWebViewProgress', '~> 0.2.3'
+  s.subspec 'Utils' do |Utils|
+	Utils.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/Utils/*"
+  end
+
+  s.subspec 'YHTModules' do |YHTModules|
+        YHTModules.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/*"
+  end
+
+  s.subspec 'ManualIntegration' do |ManualIntegration|
+        ManualIntegration.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/ManualIntegration/*"
+  end
+
+  s.subspec 'AutoIntegration' do |AutoIntegration|
+        AutoIntegration.source_files = "CloudContract_SDK/YHT_SDK_1.1.0/AutoIntegration/*"
+  end
 end
