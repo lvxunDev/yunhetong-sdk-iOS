@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author       = { "dazheng_wu" => "369159834@qq.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => "#{s.version}" }
-  s.source_files  = "CloudContract_SDK/YHT_SDK_1.1.0/*"
+  s.source_files  = "CloudContract_SDK/YHT_SDK_1.1.0/Utils/*"
   s.requires_arc = true
 
   s.dependency 'MBProgressHUD', '~> 1.0.0'
