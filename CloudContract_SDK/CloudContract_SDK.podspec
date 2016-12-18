@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.version      = "1.1.0"
   s.summary      = "This is a CloudContract_SDK"
   s.homepage     = "https://github.com/lvxunDev/yunhetong-sdk-iOS"
-  s.license      = "MIT"
+  s.license      = "Copyright (c) 2016年 YHT. All rights reserved."
   s.author       = { "dazheng_wu" => "369159834@qq.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => "#{s.version}" }
