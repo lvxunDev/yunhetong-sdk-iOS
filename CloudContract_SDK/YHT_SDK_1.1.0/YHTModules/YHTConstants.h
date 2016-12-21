@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define TEST_SERVICE                    1
+//#define TEST_SERVICE                    1
 
 @interface YHTConstants : NSObject
 
