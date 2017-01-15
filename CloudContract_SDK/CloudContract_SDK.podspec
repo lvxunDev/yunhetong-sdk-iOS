@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.version      = "1.1.2"
   s.summary      = "This is a CloudContract_SDK"
   s.homepage     = "https://github.com/lvxunDev/yunhetong-sdk-iOS"
-  s.license      = "Copyright (c) 2016年 YHT. All rights reserved."
+  s.license      = "MIT"
   s.author       = { "dazheng_wu" => "369159834@qq.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => "#{s.version}" }
-  s.source_files  = "CloudContract_SDK/YHT_SDK_1.1.0/Utils/*" , "CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/*" ,"CloudContract_SDK/YHT_SDK_1.1.0/ManualIntegration/*", "CloudContract_SDK/YHT_SDK_1.1.0/AutoIntegration/*"
+  s.source       = { :git => "https://github.com/lvxunDev/yunhetong-sdk-iOS.git", :tag => '1.1.2' }
+  s.source_files  = 'CloudContract_SDK/YHT_SDK_1.1.0/Utils/*', 'CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/*', 'CloudContract_SDK/YHT_SDK_1.1.0/ManualIntegration/*', 'CloudContract_SDK/YHT_SDK_1.1.0/AutoIntegration/*'
   s.requires_arc = true
   s.resource = 'CloudContract_SDK/YHT_SDK_1.1.0/YHTModules/YHTSdk.bundle'
   
