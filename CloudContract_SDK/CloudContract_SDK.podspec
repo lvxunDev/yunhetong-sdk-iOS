@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "CloudContract_SDK"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "This is a CloudContract_SDK"
   s.homepage     = "https://github.com/lvxunDev/yunhetong-sdk-iOS"
   s.license      = "Copyright (c) 2016年 YHT. All rights reserved."
