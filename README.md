@@ -1,35 +1,34 @@
 # 云合同 SDK iOS 集成文档
 ---
 [TOC]
->注：本文为云合同 iOS SDK 的新手使用教程，默认读者已经熟悉XCode开发工具的基本使用方法。
+>注：本文为云合同 iOS SDK 的使用教程，默认读者已经熟悉Xcode开发工具的基本使用方法。
 
 ### 1. 集成准备
 ##### 1.1 获取 AppId
-登录云合同 SDK 开发者平台，注册应用，获取得到 AppId。
+登录云合同 SDK 开发者平台，注册应用，获得 `AppId`。
 ##### 1.2 在你的工程中引入 SDK
 <!--下载[云合同SDK][1]并解压缩-->
  Installation with CocoaPods：  pod 'CloudContract_SDK', '~> 1.1.1’
 ##### 1.3 导入 SDK
-a. 在 Info.plist 中加入 App Transport Security Settings 设置 Allow Arbitrary Loads 值为 YES
+a. 在 `Info.plist` 中加入 `App Transport Security Settings` 设置 `Allow Arbitrary Loads` 值为 YES；
 
-
-b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Compile Sources 中删除 NSData+Base64.m 即可
-
+b. 如果你的项目中引用了 `NSData+Base64`, 在 `TARGETS` - `Build Phases` - `Compile Sources` 中删除 `NSData+Base64.m` 即可；
 
 ### 2. 基本功能集成
 #### 2.1 基本功能集成准备
-开发者需要自己实现 ```YHTSDKDemoTokenListener``` 类，该类的主要作用是获取'token'，且在'token'失效时能自动去重新获取'token'，并将该类设置单例。
+开发者需要自己实现 ```YHTSDKDemoTokenListener``` 类，该类的主要作用是获取 `token`，且在 `token` 失效时能自动去重新获取 `token` ，并将该类设置为单例（参照 Demo ）。
 
-* 第三方 APP 实现获取'token'字符串的方法，```resetTokenBlock``` 中实现该操作，代码示例如下，详情见demo
+* 第三方 APP 实现获取 `token` 的方法，```resetTokenBlock``` 回调中实现该操作，代码示例如下，详情见Demo
 
 ```
 - (void)getTokenWithCompletionHander:(ResetTokenBlock)resetTokenBlock{
 	//异步获取'token'字符串并返回，TODU...
 	resetTokenBlock(responseObject);
 }
+
 ```
 
-* 第三方 APP 在获取到'token'字符串后，设置'token'，在方法 ```- (void)getTokenWithCompletionHander:(ResetTokenBlock)resetTokenBlock``` 中实现该操作，代码示例如下，详情见demo
+* 第三方 APP 在获取到 `token` 后，设置 `token` ，在方法 ```- (void)getTokenWithCompletionHander:(ResetTokenBlock)resetTokenBlock``` 中实现该操作，代码示例如下，详情见 Demo
 
 ```
     [self getTokenWithCompletionHander:^(id obj) {
@@ -39,13 +38,13 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
     }];
 ```
 
-* 如果'token'超时，需要在 ```AppDelegate.m``` 中，设置'token'超时回调代理，调用下面这个方法，```+ (void)setResetTokenDelegate:(id)delegate;``` 代码示例如下，详情见demo
+* 如果 `token`超时，需要在 ```AppDelegate.m``` 中，设置 `token` 超时回调代理，调用下面这个方法，```+ (void)setResetTokenDelegate:(id)delegate;``` 代码示例如下，详情见 Demo
 
 ``` 
     [YHTSdk setResetTokenDelegate:[YHTSDKDemoTokenListener sharedManager]];
 ```
     
-* 在 ```YHTSDKDemoTokenListener.m``` 中，实现 ```YHTResetTokenDelegate``` 中定义的协议方法 ```- (void)resetTokenWithHtttpRequest:(YHTHttpRequest *)httpRequest```，在'token'失效时能自动去重新获取'token'，代码示例如下，详情见demo
+* 在 ```YHTSDKDemoTokenListener.m``` 中，实现 ```YHTResetTokenDelegate``` 中定义的协议方法 ```- (void)resetTokenWithHtttpRequest:(YHTHttpRequest *)httpRequest```，在 `token` 失效时能自动去重新获取 `token`，代码示例如下，详情见 Demo
 
 ```
 - (void)resetTokenWithHtttpRequest:(YHTHttpRequest *)httpRequest{
@@ -59,20 +58,20 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
 ```
 #### 2.2 SDK的基本功能集成
 ##### 2.2.1 快速集成
-* 快速集成合同的**查看**、**签署**、**作废**功能，可使用 SDK 提供的 ```YHTContractContentViewController```，详情参考demo
+* 快速集成合同的**查看**、**签署**、**作废**功能，可使用此 SDK 提供的 ```YHTContractContentViewController```，详情参考Demo
 
 ```
     YHTContractContentViewController *vc = [YHTContractContentViewController instanceWithContractID:contract.contractID];
     [self.navigationController pushViewController:vc animated:YES];
 ```
-* 快速集成签名的**查看**、**删除**功能，可使用 SDK 提供的 ```YHTSignViewController```，详情参考demo
+* 快速集成签名的**查看**、**删除**功能，可使用 SDK 提供的 ```YHTSignViewController```，详情参考Demo
 
 ```
 	YHTSignViewController *vc = [YHTSignViewController instance];
 	[self.navigationController pushViewController:vc animated:YES];
 ```
 
-* 快速集成签名的**绘制**功能，可使用 SDK 提供的 ```YHTSignMadeViewController```，详情参考demo
+* 快速集成签名的**绘制**功能，可使用 SDK 提供的 ```YHTSignMadeViewController```，详情参考Demo
 
 ```
 	YHTSignMadeViewController *vc = [YHTSignMadeViewController instanceWithDelegate:self];
@@ -81,29 +80,49 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
 ##### 2.2.2 自定义集成
 **云合同合同管理模块** 指用户在第三方 APP 对合同进行操作的功能。开发者只需要调用SDK提供的 ```YHTContractManager``` 类中方法，即可完成包括合同**查看**、**签署**、**作废**功能。
 
+合同详情页面,为 UIWebView 展示直接展示 url 地址, 示例url地址： http://sdk.yunhetong.com/sdk/contract/mobile/view?contractId=1612211728205000&token=TGT-10105-5wt5KL5xuwGLjEUBXxfESsv65Dsv65eAqhzta6uT5mpiVzZvdp-cas01.example.org
+
+```
+/**
+ *  根据'contractID'直接展示拼接的 url 地址在’UIWebView‘展示即可，
+ *
+ **/      
+- (void)refresh{
+    NSMutableString *__urlStr = [NSMutableString stringWithString:[YHTConstants urlByHost:kViewWebContract_URL]];
+    [__urlStr appendFormat:@"?contractId=%ld", [self.contractID longValue]];
+    [__urlStr appendFormat:@"&token=%@", [YHTTokenManager sharedManager].token];
+
+    self.contractURL = [NSURL URLWithString:__urlStr];
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    NSURLRequest *__request = [NSURLRequest requestWithURL:self.contractURL
+                                               cachePolicy:NSURLRequestReloadIgnoringCacheData
+                                           timeoutInterval: 20.0];
+    [self loadRequest:__request];
+}
+```
+
 第三方应用可实现 YHTHttpRequestDelegate 中的两个协议方法来监听此次 HTTP 请求，方法如下：
 
 ```
 /**
- *  收到一个来自云合同'HTTP'请求失败的响应
- *
- *  @param request  具体的请求对象
- *  @param error    错误信息
- */
-
-- (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error;
-
-/**
- *  收到一个来自云合同'HTTP'请求的响应
+ *  收到一个来自云合同'HTTP'请求成功的响应
  *
  *  @param request  具体的请求对象
  *  @param result   请求的返回结果
  */
 - (void)request:(YHTHttpRequest *)request didFinishLoadingWithResult:(id)result;
 
+/**
+ *  收到一个来自云合同'HTTP'请求失败的响应
+ *
+ *  @param request  具体的请求对象
+ *  @param error    请求的错误信息
+ */
+- (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error;
+
 ```
 
-* 合同查看  指在SDK客户端中点击查看合同进入合同查看页面。
+* 合同查看  指在 SDK 客户端中点击查看合同进入合同查看页面。
 	
 ```
 /**
@@ -116,9 +135,10 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
 - (void)viewContactWithContractID:(NSNumber *)contractID
                               tag:(NSString *)tag
                          delegate:(id<YHTHttpRequestDelegate>)delegate;
+                         
 ```
 
-* 合同签署  指云合同根据用户签名信息替换占位符完成签署或根据自动签署标识自动替用户完成签署的功能。
+* 合同签署  指云合同根据用户签名信息替换占位符完成签署的功能或者根据自动签署标识自动完成签署的功能。
 
 ```
 /**
@@ -133,7 +153,7 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
                           delegate:(id<YHTHttpRequestDelegate>)delegate;
 
 ```
-* 合同作废 指对接用户对至少有一人已签署但尚未签署完成的合同执行的作废的功能。
+* 合同作废 指用户对至少有一人已签署但尚未签署完成的合同执行作废的功能。
 
 ```
 /**
@@ -148,7 +168,7 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
                              delegate:(id<YHTHttpRequestDelegate>)delegate;
 ```
 
-**合同管理模块示例如下，详情见demo**
+**合同管理模块示例如下，详情见Demo**
 
 ```
 //合同查看
@@ -165,7 +185,8 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
                                                               tag:@"InvalidContract"
                                                          delegate:self];                    
                                                          
- #pragma mark - YHTHttpRequestDelegate
+#pragma mark - YHTHttpRequestDelegate
+ 
 //请求失败
 - (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error{
     //合同查看、签署、作废失败，TODU...
@@ -188,8 +209,7 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
 
 ```
 
-
-**云合同签名管理模块** 指用户在第三方 APP 对用户的签名信息进行操作的功能。开发者只需要调用SDK提供的 ```YHTSignManager``` 类中方法，即可完成签名**查看**，**绘制**及**删除**功能。
+**云合同签名管理模块** 指用户在第三方 APP 对用户的签名进行操作的功能。开发者只需要调用SDK提供的 ```YHTSignManager``` 类中方法，即可完成签名**查看**，**绘制**及**删除**功能。
 
 第三方应用可实现 ```YHTHttpRequestDelegate``` 中的两个协议方法来监听 HTTP 请求，方法同上；
 
@@ -236,7 +256,7 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
 ```
 
 
-**签名管理模块示例如下，详情见demo**
+**签名管理模块示例如下，详情见Demo**
 
 ```
 //签名查看
@@ -253,6 +273,7 @@ b. 如果你的项目中引用了 NSData+Base64, 在TARGETS - Build Phases - Com
                                               delegate:self];
                                                   
 #pragma mark - YHTHttpRequestDelegate
+
 //请求失败
 - (void)request:(YHTHttpRequest *)request didFailWithError:(NSError *)error{
     //签名查看、删除、生成失败，TODU...
