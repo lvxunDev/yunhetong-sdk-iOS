@@ -401,6 +401,7 @@
 					CF67F6371CC8B04F00BBB7AF = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 633UF3BWJG;
+						ProvisioningStyle = Manual;
 					};
 					CF67F6501CC8B04F00BBB7AF = {
 						CreatedOnToolsVersion = 7.3;
@@ -664,6 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 633UF3BWJG;
 				INFOPLIST_FILE = CloudContract_SDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -672,9 +674,10 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lx.CloudContract;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lx.CloudContract.CloudContract-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "427c57f4-ec75-4ec0-bedf-0bd1c0cf2ae1";
+				PROVISIONING_PROFILE_SPECIFIER = "CloudContract-SDK";
 			};
 			name = Debug;
 		};
@@ -685,6 +688,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 633UF3BWJG;
 				INFOPLIST_FILE = CloudContract_SDK/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -692,9 +696,10 @@
 					"$(inherited)",
 					"-ObjC",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.lx.CloudContract;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lx.CloudContract.CloudContract-SDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "427c57f4-ec75-4ec0-bedf-0bd1c0cf2ae1";
+				PROVISIONING_PROFILE_SPECIFIER = "CloudContract-SDK";
 			};
 			name = Release;
 		};
