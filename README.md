@@ -9,6 +9,8 @@
 ##### 1.2 在你的工程中引入 SDK
 <!--下载[云合同SDK][1]并解压缩-->
  Installation with CocoaPods：  pod 'CloudContract_SDK'
+ > 注意： 如果获取不到 CloudContract_SDK，请执行 `pod repo update` 更新下本地仓库。
+ 
 ##### 1.3 导入 SDK
 a. 在 `Info.plist` 中加入 `App Transport Security Settings` 设置 `Allow Arbitrary Loads` 值为 YES；
 
